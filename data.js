@@ -1,7 +1,7 @@
 const projet1 =
-  "http://localhost:8082/Configurateur/1c3e62d0-ac8f-4c2a-a2a0-22d7fca2b6a1";
+  "https://app.threed.fr/Configurateur/1c3e62d0-ac8f-4c2a-a2a0-22d7fca2b6a1";
 const projet2 =
-  "http://localhost:8082/Configurateur/010a2aad-c83a-42ed-accb-22d84471d14a";
+  "https://app.threed.fr/Configurateur/010a2aad-c83a-42ed-accb-22d84471d14a";
 const projets = [
   {
     nom: "Tee-shirt",
