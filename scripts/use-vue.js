@@ -18,19 +18,14 @@ const App = {
       const refEl = this.$refs.refEl;
 
       if (refEl && refEl.contentWindow) {
-        const t = new Date().getTime().toString();
-        console.log("send :" + this.produit.action + "&t=" + t);
+        const json = JSON.stringify({
+          action: "configure",
+          options: this.produit.options,
+        });
+        const params = JSON.parse(json);
+        console.log("send : " + json);
 
-        refEl.contentWindow.postMessage(
-          {
-            action: "configure",
-            config: {
-              defaultFonts: ["Humor Sans", "Helvetica", "Times New Roman"],
-            },
-            route: this.produit.action + "&t=" + t,
-          },
-          "*"
-        );
+        refEl.contentWindow.postMessage(params, "*");
       }
     },
   },

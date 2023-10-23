@@ -7,7 +7,6 @@ const baseUrl = useLocalhost
   : "https://app.threed.fr/";
 console.debug("base url : " + baseUrl);
 
-
 const projet1 = baseUrl + "Configurateur/1c3e62d0-ac8f-4c2a-a2a0-22d7fca2b6a1";
 const projet2 = baseUrl + "Configurateur/010a2aad-c83a-42ed-accb-22d84471d14a";
 
@@ -16,85 +15,85 @@ const projets = [
     nom: "Tee-shirt",
     baseUrl: projet1,
     url: projet1 + "?txt.Couleur=bleu",
-    actions: [
-      {
-        nom: "Couleur",
-        choix: [
-          {
-            libelle: "bleu",
-            action: "?txt.Couleur=bleu",
-          },
-          {
-            libelle: "gris",
-            action: "?txt.Couleur=gris",
-          },
-          {
-            libelle: "Threed-Jaune",
-            action: "?txt.Couleur=Threed-Jaune",
-          },
-        ],
-      },
-    ],
+    // actions: [
+    //   {
+    //     nom: "Couleur",
+    //     choix: [
+    //       {
+    //         libelle: "bleu",
+    //         options: [{txt.Couleur=bleu",
+    //       },
+    //       {
+    //         libelle: "gris",
+    //         options: [{txt.Couleur=gris",
+    //       },
+    //       {
+    //         libelle: "Threed-Jaune",
+    //         options: [{txt.Couleur=Threed-Jaune",
+    //       },
+    //     ],
+    //   },
+    // ],
   },
   {
     nom: "Shoes",
     baseUrl: projet2,
     url: projet2 + "?txt.Chaussure=Blanc",
-    groupes: [
-      {
-        nom: "Couleur",
-        items: [
-          {
-            libelle: "Chaussure - Blanc",
-            action: "?txt.Chaussure=Blanc",
-          },
-          {
-            libelle: "Chaussure - Rouge",
-            action: "?txt.Chaussure=Rouge",
-          },
-          {
-            libelle: "Chaussure - Vert",
-            action: "?txt.Chaussure=Vert",
-          },
-        ],
-      },
+    // groupes: [
+    //   {
+    //     nom: "Couleur",
+    //     items: [
+    //       {
+    //         libelle: "Chaussure - Blanc",
+    //         options: [{txt.Chaussure=Blanc",
+    //       },
+    //       {
+    //         libelle: "Chaussure - Rouge",
+    //         options: [{txt.Chaussure=Rouge",
+    //       },
+    //       {
+    //         libelle: "Chaussure - Vert",
+    //         options: [{txt.Chaussure=Vert",
+    //       },
+    //     ],
+    //   },
 
-      {
-        nom: "Semelle",
-        items: [
-          {
-            libelle: "Semelle - Blanc",
-            action: "?txt.Semelle=Blanc",
-          },
-          {
-            libelle: "Semelle - Rouge",
-            action: "?txt.Semelle=Rouge",
-          },
-          {
-            libelle: "Semelle - Vert",
-            action: "?txt.Semelle=Vert",
-          },
-        ],
-      },
+    //   {
+    //     nom: "Semelle",
+    //     items: [
+    //       {
+    //         libelle: "Semelle - Blanc",
+    //         options: [{txt.Semelle=Blanc",
+    //       },
+    //       {
+    //         libelle: "Semelle - Rouge",
+    //         options: [{txt.Semelle=Rouge",
+    //       },
+    //       {
+    //         libelle: "Semelle - Vert",
+    //         options: [{txt.Semelle=Vert",
+    //       },
+    //     ],
+    //   },
 
-      {
-        nom: "Lacet",
-        items: [
-          {
-            libelle: "Lacet - Blanc",
-            action: "?txt.Lacet=Blanc",
-          },
-          {
-            libelle: "Lacet - Rouge",
-            action: "?txt.Lacet=Rouge",
-          },
-          {
-            libelle: "Lacet - Vert",
-            action: "?txt.Lacet=Vert",
-          },
-        ],
-      },
-    ],
+    //   {
+    //     nom: "Lacet",
+    //     items: [
+    //       {
+    //         libelle: "Lacet - Blanc",
+    //         options: [{txt.Lacet=Blanc",
+    //       },
+    //       {
+    //         libelle: "Lacet - Rouge",
+    //         options: [{txt.Lacet=Rouge",
+    //       },
+    //       {
+    //         libelle: "Lacet - Vert",
+    //         options: [{txt.Lacet=Vert",
+    //       },
+    //     ],
+    //   },
+    // ],
   },
 ];
 
@@ -102,31 +101,28 @@ const projet = projets[0];
 
 const produits = [
   {
+    libelle: "noir",
+    options: [{ "txt.Couleur": "noir" }],
     href: "./maillot-viralto-500-jr-noir-id-8643442.html",
 
     alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR NOIR (noir)",
 
     src: "./static/k$5625b4e4bfb186d84e4be381924fe1f7",
-    libelle: "noir",
-    action: "?txt.Couleur=noir",
   },
 
   {
+    libelle: "bleu",
+    options: [{ "txt.Couleur": "bleu" }],
     href: "./maillot-de-football-viralto-jr-axton-rose-noir-id-8740039.html",
 
     alt: "MAILLOT DE FOOTBALL VIRALTO JR AXTON ROSE &amp; NOIR (bleu)",
 
     src: "./static/k$51c19ff52fd5bf0847b412e869c1a3d6",
-
-    libelle: "bleu",
-    action: "?txt.Couleur=bleu",
   },
 
- 
   {
     libelle: "Threed-Jaune",
-    action: "?txt.Couleur=Threed-Jaune",
-
+    options: [{ "txt.Couleur": "Threed-Jaune" }],
     href: "./maillot-viralto-500-jr-jaune-id-8643438.html",
 
     alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR JAUNE (Threed-Jaune)",
@@ -135,7 +131,7 @@ const produits = [
   },
   {
     libelle: "Threed-Bleu",
-    action: "?txt.Couleur=Threed-Bleu",
+    options: [{ "txt.Couleur": "Threed-Bleu" }],
     href: "./maillot-viralto-500-jr-marine-id-8643436.html",
 
     alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR MARINE (Threed-Bleu)",
@@ -144,26 +140,23 @@ const produits = [
   },
   {
     libelle: "Threed-Gris",
-    action: "?txt.Couleur=Threed-Gris",
+    options: [{ "txt.Couleur": "Threed-Gris" }],
 
     href: "./maillot-viralto-500-jr-blanc-id-8643440.html",
 
     alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR BLANC (Threed-Gris)",
 
     src: "./static/k$c5ae348654d7121aaf14982ed61bcfcd",
-
-   
   },
 
-      // {
-      //   href: "./maillot-viralto-520-jr-violet-id-8643435.html",
+  // {
+  //   href: "./maillot-viralto-520-jr-violet-id-8643435.html",
 
-      //   alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR VIOLET",
+  //   alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR VIOLET",
 
-      //   src: "./static/k$c29a8f9e7e1dd61793694beebe8d2149",
-      // },
+  //   src: "./static/k$c29a8f9e7e1dd61793694beebe8d2149",
+  // },
 
- 
   //   {
   //     href: "./maillot-de-football-viralto-jr-letters-bleu-id-8740040.html",
 
@@ -213,7 +206,7 @@ const produits = [
 
   //     src: "./static/k$9cf394029544c789b331a3cc613f47fa",
   //   },
- 
+
   //   {
   //     href: "./maillot-viralto-500-jr-marine-id-8643436.html",
 
@@ -221,5 +214,4 @@ const produits = [
 
   //     src: "./static/k$e66783ee196313eb07da6f6ba2b60ff8",
   //   },
- 
 ];
