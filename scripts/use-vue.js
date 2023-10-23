@@ -39,6 +39,6 @@ const App = {
 // Create new Vue app
 const app = Vue.createApp(App);
 
-app.component("menu-component", menuComponent);
-app.component("button-component", buttonComponent);
+app.component("threed-menu-component", menuComponent);
+app.component("threed-button-component", buttonComponent);
 app.mount("#app");

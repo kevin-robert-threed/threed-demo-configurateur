@@ -3,7 +3,7 @@ const menuComponent = {
   <ul class="product-view">
 
 
-    <button-component
+    <threed-button-component
       v-for="p in produits" :key="p.href"    
    
       
