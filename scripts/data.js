@@ -101,16 +101,6 @@ const projet = projets[0];
 
 const produits = [
   {
-    libelle: "noir",
-    options: [{ "txt.Couleur": "noir" }],
-    href: "./maillot-viralto-500-jr-noir-id-8643442.html",
-
-    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR NOIR (noir)",
-
-    src: "./static/k$5625b4e4bfb186d84e4be381924fe1f7",
-  },
-
-  {
     libelle: "bleu",
     options: [{ "txt.Couleur": "bleu" }],
     href: "./maillot-de-football-viralto-jr-axton-rose-noir-id-8740039.html",
@@ -119,7 +109,15 @@ const produits = [
 
     src: "./static/k$51c19ff52fd5bf0847b412e869c1a3d6",
   },
+  {
+    libelle: "noir",
+    options: [{ "txt.Couleur": "noir" }],
+    href: "./maillot-viralto-500-jr-noir-id-8643442.html",
 
+    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR NOIR (noir)",
+
+    src: "./static/k$5625b4e4bfb186d84e4be381924fe1f7",
+  },
   {
     libelle: "Threed-Jaune",
     options: [{ "txt.Couleur": "Threed-Jaune" }],

@@ -12,7 +12,7 @@ const App = {
   methods: {
     onClick(item) {
       console.debug(item);
-      debugger;
+      // debugger;
       this.produit = this.produits.find((x) => x.href == item.href);
 
       const refEl = this.$refs.refEl;
