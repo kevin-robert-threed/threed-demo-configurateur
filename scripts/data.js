@@ -104,7 +104,7 @@ const produits = [
   {
     href: "./maillot-viralto-500-jr-noir-id-8643442.html",
 
-    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR NOIR",
+    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR NOIR (noir)",
 
     src: "./static/k$5625b4e4bfb186d84e4be381924fe1f7",
     libelle: "noir",
@@ -114,7 +114,7 @@ const produits = [
   {
     href: "./maillot-de-football-viralto-jr-axton-rose-noir-id-8740039.html",
 
-    alt: "MAILLOT DE FOOTBALL VIRALTO JR AXTON ROSE &amp; NOIR",
+    alt: "MAILLOT DE FOOTBALL VIRALTO JR AXTON ROSE &amp; NOIR (bleu)",
 
     src: "./static/k$51c19ff52fd5bf0847b412e869c1a3d6",
 
@@ -129,7 +129,7 @@ const produits = [
 
     href: "./maillot-viralto-500-jr-jaune-id-8643438.html",
 
-    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR JAUNE",
+    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR JAUNE (Threed-Jaune)",
 
     src: "./static/k$da947f1fa2c9ebc9d203106213e64af5",
   },
@@ -138,7 +138,7 @@ const produits = [
     action: "?txt.Couleur=Threed-Bleu",
     href: "./maillot-viralto-500-jr-marine-id-8643436.html",
 
-    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR MARINE",
+    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR MARINE (Threed-Bleu)",
 
     src: "./static/k$e66783ee196313eb07da6f6ba2b60ff8",
   },
@@ -148,7 +148,7 @@ const produits = [
 
     href: "./maillot-viralto-500-jr-blanc-id-8643440.html",
 
-    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR BLANC",
+    alt: "MAILLOT DE FOOTBALL MANCHES COURTES VIRALTO CLUB JR BLANC (Threed-Gris)",
 
     src: "./static/k$c5ae348654d7121aaf14982ed61bcfcd",
 
