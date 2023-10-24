@@ -11,13 +11,12 @@ const App = {
   },
   methods: {
     onClick(item) {
-      console.debug(item);
-      // debugger;
+      console.debug(item);    
       this.produit = this.produits.find((x) => x.href == item.href);
 
-      const refEl = this.$refs.refEl;
+      const frame = this.$refs.viewer.frame;
 
-      if (refEl && refEl.contentWindow) {
+      if (frame && frame.contentWindow) {
         const json = JSON.stringify({
           action: "configure",
           options: this.produit.options,
@@ -25,7 +24,7 @@ const App = {
         const params = JSON.parse(json);
         console.log("send : " + json);
 
-        refEl.contentWindow.postMessage(params, "*");
+        frame.contentWindow.postMessage(params, "*");
       }
     },
     getBack() {
@@ -43,6 +42,7 @@ const App = {
 // Create new Vue app
 const app = Vue.createApp(App);
 
+app.component("threed-viewer-component", viewerComponent);
 app.component("threed-menu-component", menuComponent);
 app.component("threed-button-component", buttonComponent);
 app.mount("#app");

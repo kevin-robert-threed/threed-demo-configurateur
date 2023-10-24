@@ -9572,19 +9572,14 @@
                           >
 
 
-
+                          <threed-viewer-component
+                           ref="viewer"
+                            :produit="produit" 
+                            :projet="projet" 
+                            
+                            :callback="onClick"/> 
                           
-                          <img
-                              :src="produit.src"
-                              :alt="produit.alt"
-                              class="test"      
-                            /> 
- 
-
-                          <iframe ref="refEl" width="100%" height="500" 
-                          :src="projet.url" 
-                          frameborder="0" 
-                          allowfullscreen></iframe> 
+                  
  
 
                   
@@ -12115,6 +12110,7 @@
       </div>
     </div>
   </div>    
+   <script src="./scripts/components/viewer-component.js"></script>
    <script src="./scripts/components/menu-component.js"></script>
    <script src="./scripts/components/button-component.js"></script>   
    <script src="./scripts/data.js"></script>
