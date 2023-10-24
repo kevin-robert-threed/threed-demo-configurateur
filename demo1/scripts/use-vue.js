@@ -28,6 +28,15 @@ const App = {
         refEl.contentWindow.postMessage(params, "*");
       }
     },
+    getBack() {
+      var pathArray = window.location.href.split("/");
+      var protocol = pathArray[0];
+      var host = pathArray[2];
+      var url = protocol + "//" + host;
+
+      console.debug(url);
+      window.location.href = url;
+    },
   },
 };
 

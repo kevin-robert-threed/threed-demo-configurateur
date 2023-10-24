@@ -288,7 +288,8 @@
         </div>
         <div class="panel wrapper">
           <div class="header content">
-            <!-- ko scope: 'index = ammenu_hamburger_toggle' --><!-- ko if: $data.source.isMobile() || true --><button
+            <!-- ko scope: 'index = ammenu_hamburger_toggle' --><!-- ko if: $data.source.isMobile() || true -->
+            <button
               class="ammenu-button -hamburger -trigger"
               aria-controls="ammenu-sidebar"
               aria-haspopup="menu"
@@ -298,6 +299,9 @@
               aria-expanded="false"
               aria-hidden="false"
               style="color: rgb(0, 0, 0)"
+
+               @click="getBack" 
+            
             ></button>
             <!-- /ko --><!-- /ko -->
             <div data-block="minicart" class="minicart-wrapper">
