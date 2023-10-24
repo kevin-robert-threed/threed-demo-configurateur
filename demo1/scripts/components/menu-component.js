@@ -11,7 +11,7 @@ const menuComponent = {
     />    
 </ul>`,
   props: ["produits", "produit"],
-  data: () => ({ item: "test" }),
+  
   methods: {
     onClick(item) {
       this.$emit("onClick", item);

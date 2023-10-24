@@ -12,7 +12,7 @@ const buttonComponent = {
   </li> 
    `,
   props: ["href", "alt", "src", "isSelected"],
-  data: () => ({ item: "test" }),
+   
   methods: {
     onClick() {
       this.$emit("onClick", { href: this.href });

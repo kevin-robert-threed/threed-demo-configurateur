@@ -3,15 +3,16 @@ const viewerComponent = {
         <img
         :src="produit.src"
         :alt="produit.alt"
-        class="test"      
+        class="viewer-image"      
         /> 
         <iframe ref="frame" width="100%" height="500" 
         :src="projet.url" 
         frameborder="0" 
-        allowfullscreen></iframe>
+        class="viewer-iframe"   
+        allowfullscreen></iframe> 
   `,
   props: ["projet", "produit"],
-  data: () => ({ item: "test" }),
+   
   computed: {
     frame() {
       return this.$refs.frame;
