@@ -1,12 +1,3 @@
-const useLocalhost =
-  window.location.href.includes("localhost") ||
-  window.location.href.includes("127.0.0.1");
-
-const baseUrl = useLocalhost
-  ? "http://localhost:8082/"
-  : "https://app.threed.fr/";
-console.debug("base url : " + baseUrl);
-
 const projet1 = baseUrl + "Configurateur/1c3e62d0-ac8f-4c2a-a2a0-22d7fca2b6a1";
 const projet2 = baseUrl + "Configurateur/010a2aad-c83a-42ed-accb-22d84471d14a";
 

@@ -1,6 +1,3 @@
-const { onMounted, onUpdated, onUnmounted, ref, reactive, getCurrentInstance } =
-  Vue;
-
 const App = {
   data() {
     return {
@@ -11,30 +8,11 @@ const App = {
   },
   methods: {
     onClick(item) {
-      console.debug(item);    
       this.produit = this.produits.find((x) => x.href == item.href);
-
-      const frame = this.$refs.viewer.frame;
-
-      if (frame && frame.contentWindow) {
-        const json = JSON.stringify({
-          action: "configure",
-          options: this.produit.options,
-        });
-        const params = JSON.parse(json);
-        console.log("send : " + json);
-
-        frame.contentWindow.postMessage(params, "*");
-      }
+      configureIFrame(item, this.produit, this.$refs.viewer.frame);
     },
     getBack() {
-      var pathArray = window.location.href.split("/");
-      var protocol = pathArray[0];
-      var host = pathArray[2];
-      var url = protocol + "//" + host;
-
-      console.debug(url);
-      window.location.href = url;
+      getBack();
     },
   },
 };

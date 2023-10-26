@@ -1,0 +1,11 @@
+.viewer-box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.viewer-image {
+  position: absolute;
+}
+
+.viewer-iframe {
+}
