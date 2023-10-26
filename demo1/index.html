@@ -9511,146 +9511,15 @@
                   >
                 </div>
                 <div
-                  class="gallery-placeholder"
-                  data-gallery-role="gallery-placeholder"
-                >
-                  <!--
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
--->
-                  <div class="fotooorama--hidden"></div>
-                  <style></style>
-                  <div
-                    class="fotooorama-item fotooorama fotooorama1697702541426"
-                    data-gallery-role="gallery"
+                    class="gallery-placeholder"
+                    data-gallery-role="gallery-placeholder"
                   >
-                    <div
-                      data-gallery-role="fotooorama__focusable-start"
-                      tabindex="-1"
-                    ></div>
-                    <div
-                      class="fotooorama__wrap fotooorama__wrap--css3 fotooorama__wrap--slide fotooorama__wrap--no-controls"
-                      style="min-width: 0px; max-width: 100%"
-                    >
-                      <div
-                        class="fotooorama__stage"
-                        data-fotooorama-stage="fotooorama__stage"
-                      
-                      >
-                        <div
-                          class="fotooorama__fullscreen-icon"
-                          data-gallery-role="fotooorama__fullscreen-icon"
-                          tabindex="0"
-                          aria-label="Exit fullscreen"
-                          role="button"
-                        ></div>
-                        <div
-                          class="fotooorama__arr fotooorama__arr--prev fotooorama__arr--disabled"
-                          tabindex="-1"
-                          role="button"
-                          aria-label="Previous"
-                          data-gallery-role="arrow"
-                          disabled="disabled"
-                          style="display: none"
-                        >
-                          <div class="fotooorama__arr__arr"></div>
-                        </div>
-                        <div
-                          class="fotooorama__stage__shaft"
-                          tabindex="0"
-                          data-gallery-role="stage-shaft"
-                      
-                        >
-                          <div
-                            class="box viewer-box fotooorama__stage__frame fotooorama__active fotooorama_vertical_ratio fotooorama__loaded fotooorama__loaded--img">
-
-
-                          <threed-viewer-component
-                           ref="viewer"
-                            :produit="produit" 
-                            :projet="projet"                             
-                            :callback="onClick"/> 
-                             </div>
-                        </div>
-                        <div
-                          class="fotooorama__arr fotooorama__arr--next fotooorama__arr--disabled"
-                          tabindex="-1"
-                          role="button"
-                          aria-label="Next"
-                          data-gallery-role="arrow"
-                          disabled="disabled"
-                          style="display: none"
-                        >
-                          <div class="fotooorama__arr__arr"></div>
-                        </div>
-                        <div class="fotooorama__video-close"></div>
-                        <div
-                          class="fotooorama__zoom-in zoom-in-loaded"
-                          data-gallery-role="fotooorama__zoom-in"
-                          aria-label="Zoom in"
-                          role="button"
-                          tabindex="0"
-                        ></div>
-                        <div
-                          class="fotooorama__zoom-out zoom-out-loaded"
-                          data-gallery-role="fotooorama__zoom-out"
-                          aria-label="Zoom out"
-                          role="button"
-                          tabindex="0"
-                        ></div>
-                        <div class="fotooorama__spinner"></div>
-                      </div>
-                      <div
-                        class="fotooorama__nav-wrap"
-                        data-gallery-role="nav-wrap"
-                        style="display: none"
-                      >
-                        <div class="fotooorama__nav" style="height: 64px">
-                          <div
-                            class="fotooorama__thumb__arr fotooorama__thumb__arr--left fotooorama__arr--disabled"
-                            role="button"
-                            aria-label="Previous"
-                            data-gallery-role="arrow"
-                            tabindex="-1"
-                            disabled="disabled"
-                          >
-                            <div class="fotooorama__thumb--icon"></div>
-                          </div>
-                          <div class="fotooorama__nav__shaft">
-                            <div class="fotooorama__thumb-border"></div>
-                          </div>
-                          <div
-                            class="fotooorama__thumb__arr fotooorama__thumb__arr--right fotooorama__arr--disabled"
-                            role="button"
-                            aria-label="Next"
-                            data-gallery-role="arrow"
-                            tabindex="-1"
-                            disabled="disabled"
-                          >
-                            <div class="fotooorama__thumb--icon"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <span class="slide-qty"
-                        ><span data-gallery-role="count"
-                          ><strong>1</strong>/1</span
-                        ></span
-                      >
-                    </div>
-                    <div
-                      data-gallery-role="fotooorama__focusable-end"
-                      tabindex="-1"
-                    ></div>
+                    <threed-viewer-component
+                      ref="viewer"
+                      :projet="projet"
+                      :callback="onClick"
+                    />
                   </div>
-                  <div
-                    class="magnifier-preview magnify-hidden"
-                    data-gallery-role="magnifier"
-                    id="preview"
-                    style="display: none"
-                  ></div>
-                </div>
                 <!--Fix for jumping content. Loader must be the same size as gallery.-->
                 <div class="action-skip-wrapper">
                   <a
@@ -9742,9 +9611,10 @@
               <div class="product-info-main">
                 <!-- <div class="empty-block">&nbsp;</div> -->
                 <div class="left-block">
-                  <h1 class="page-title">
-                    <span class="base" data-ui-id="page-title-wrapper">{{produit.alt}} ({{produit.libelle}})</span>
-                  </h1>
+                  <div>
+                    <threed-titre-component :projet="projet" />
+                  </div>
+
                   <div class="product-info-stock-sku">
                     <div class="product attribute sku">
                       <strong class="type">Code de l'article :</strong>
@@ -9868,12 +9738,10 @@
                             id="supermodel-product"
                           >
                       
-                            <threed-menu-component
-                            
-                            :produit="produit"
-                            :produits="produits"
-                            
-                            @on-click="onClick"/> 
+                          <threed-menu-component
+                          :groupements="projet.groupements"
+                          @on-click="onClick"
+                        />
                         
                             <!-- <ul class="product-view">
                               <li>
@@ -12096,12 +11964,14 @@
       </div>
     </div>
   </div>    
-  <script src="../scripts/components/viewer-component.js"></script>
-  <script src="../scripts/components/menu-component.js"></script>
-  <script src="../scripts/components/button-component.js"></script>   
-  <script src="../scripts/helpers.js"></script>
-  <script src="../scripts/base-data.js"></script>
-  <script src="./scripts/data.js"></script>
-  <script src="./scripts/use-vue.js"></script>   
+
+    <script src="../scripts/components/viewer-component.js"></script>
+    <script src="../scripts/components/menu-component.js"></script>
+    <script src="../scripts/components/button-component.js"></script>
+    <script src="../scripts/components/titre-component.js"></script>
+    <script src="../scripts/helpers.js"></script>
+    <script src="../scripts/base-data.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/use-vue.js"></script>
   </body>
 </html>
