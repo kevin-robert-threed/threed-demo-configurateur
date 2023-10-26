@@ -8,13 +8,13 @@ function getBack() {
   window.location.href = url;
 }
 
-function configureIFrame(item, produit, frame) {
+function configureIFrame(item, frame) {
   console.debug(item);
 
   if (frame && frame.contentWindow) {
     const json = JSON.stringify({
       action: "configure",
-      options: produit.options,
+      options: item.options,
     });
     const params = JSON.parse(json);
     console.log("send : " + json);

@@ -1,6 +1,6 @@
 const buttonComponent = {
   template: `
-  
+   
   <li :class="isSelected ? 'selected' : ''">
     <a @click="onClick" ><img
         :alt="alt"
@@ -12,10 +12,10 @@ const buttonComponent = {
   </li> 
    `,
   props: ["href", "alt", "src", "isSelected"],
-   
+
   methods: {
     onClick() {
-      this.$emit("onClick", { href: this.href });
+      this.$emit("onClick");
     },
   },
 };

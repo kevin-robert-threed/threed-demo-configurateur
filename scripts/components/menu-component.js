@@ -1,20 +1,30 @@
 const menuComponent = {
-  template: `    
-  <ul class="product-view">
+  template: `
+  <div class="fieldset" tabindex="0" v-for="groupement in groupements" :key="groupement.libelle">
+    <div class="field configurable required">
+      <label class="label"><span></span> <span> {{ groupement.libelle }}</span></label>
+    </div>
+    <ul class="product-view">
     <threed-button-component
-      v-for="p in produits" :key="p.href"  
-      :isSelected="produit.href == p.href"
-      :href="p.href"
-      :alt="p.alt"
-      :src="p.src"
-      @on-click="onClick"
-    />    
-</ul>`,
-  props: ["produits", "produit"],
-  
+      v-for="groupe in groupement.groupes" :key="groupe.href"  
+      :isSelected="groupe.isSelected" 
+      :href="groupe.href"
+      :alt="groupe.alt"
+      :src="groupe.src"
+      @on-click="onClick(groupement, groupe)"
+    />      
+  </ul>
+  </div>
+ `,
+  props: ["groupements"],
+
   methods: {
-    onClick(item) {
-      this.$emit("onClick", item);
+    onClick(groupement, groupe) {
+      groupement.groupes.forEach((g) => {
+        g.isSelected = false;
+      });
+      groupe.isSelected = true;
+      this.$emit("onClick", groupe);
     },
   },
 };
