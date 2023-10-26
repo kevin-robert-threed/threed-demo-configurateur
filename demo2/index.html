@@ -414,8 +414,8 @@
                   <form
                     class="form minisearch"
                     id="search_mini_form"
-                    action="./catalogsearch/result/"
-                    method="get"
+                 
+                    
                   >
                     <div class="field search">
                       <label
@@ -1547,11 +1547,18 @@
                               href="https://contents.mediadecathlon.com/p2380229/k$ffcdecee6ad984f0d52faaf10351f215?format=auto&amp;f=500x500"
                               data-active="true"
                             >
-                              <img
+                              <!-- <img
                                 src="./static/k$ffcdecee6ad984f0d52faaf10351f215"
                                 alt="CHAUSSURES DE FOOTBALL VIRALTO III 3D AIRMESH FG FLAMINGO"
                                 class="fotorama__img"
                                 aria-hidden="false"
+                              /> -->
+
+                              <threed-viewer-component
+                                ref="viewer"
+                                :produit="produit"
+                                :projet="projet"
+                                :callback="onClick"
                               />
                             </div>
                             <div
@@ -2049,8 +2056,7 @@
                     <div class="page-title-wrapper product">
                       <h1 class="page-title">
                         <span class="base" data-ui-id="page-title-wrapper"
-                          >CHAUSSURES DE FOOTBALL VIRALTO III 3D AIRMESH FG
-                          FLAMINGO</span
+                          >{{produit.alt}} ({{produit.libelle}})</span
                         >
                       </h1>
                     </div>
@@ -2121,8 +2127,7 @@
                     <div class="product-add-form">
                       <form
                         data-product-sku="8787409"
-                        action="./checkout/cart/add/uenc/aHR0cHM6Ly93d3cuZGVjYXRobG9ucHJvLmZyL2NoYXVzc3VyZXMtZGUtZm9vdGJhbGwtdmlyYWx0by1paWktM2QtYWlybWVzaC1mZy1mbGFtaW5nby1pZC04Nzg3NDA5Lmh0bWw%2C/product/132280/"
-                        method="post"
+                           
                         id="product_addtocart_form"
                         novalidate="novalidate"
                       >
@@ -2188,7 +2193,12 @@
                               class="supermodel-product"
                               id="supermodel-product"
                             >
-                              <ul class="product-view">
+                              <threed-menu-component
+                                :produit="produit"
+                                :produits="produits"
+                                @on-click="onClick"
+                              />
+                              <!-- <ul class="product-view">
                                 <li>
                                   <a
                                     href="./chaussures-de-football-viralto-iii-collector-mutiny-unboxing-id-8773900.html"
@@ -2244,7 +2254,7 @@
                                       src="./static/k$77a728b58904e416410fdfc8332223e6"
                                   /></a>
                                 </li>
-                              </ul>
+                              </ul> -->
                             </div>
                             <div
                               class="product-options-wrapper"
@@ -2452,10 +2462,9 @@
                       </div>
                       <form
                         id="stock-alert-form"
-                        method="post"
+                        
                         class="stock-alert-form"
-                        action="./createproductalert/add/index"
-                      >
+                       >
                         <input
                           type="email"
                           placeholder="Saisissez votre email"
@@ -4196,7 +4205,7 @@
           </div>
         </footer>
         <script id="form-tmpl-multiple" type="text/x-magento-template">
-          <form id="wishlist-hidden-form" method="post" action="<%- data.url %>" class="no-display">
+          <form id="wishlist-hidden-form"  action="<%- data.url %>" class="no-display">
               <% if (data.itemId) { %>
               <input name="item_id" value="<%- data.itemId %>">
               <% } %>
@@ -4267,7 +4276,7 @@
 
                              <% }); %></select></div>
 
-                     <form id="<%- data.popupWishlistFormId %>" method="post" action="<%- data.url %>" class="form wishlist">
+                     <form id="<%- data.popupWishlistFormId %>"  action="<%- data.url %>" class="form wishlist">
                          <input name="form_key" type="hidden" value="<%- data.formKey %>">
                          <fieldset class="fieldset">
 
@@ -4358,7 +4367,7 @@
       <form
         id="fileUploadForm"
         enctype="multipart/form-data"
-        method="post"
+        
         target="fileUploadIframe"
       >
         <input
@@ -4591,7 +4600,7 @@
                   >
                     <form
                       class="form form-login"
-                      method="post"
+                      
                       data-bind="event: {submit: login }"
                       id="login-form"
                     >
