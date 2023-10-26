@@ -3,7 +3,7 @@ const projet2 = baseUrl + "Configurateur/010a2aad-c83a-42ed-accb-22d84471d14a";
 const projet = {
   nom: "Shoes",
   baseUrl: projet2,
-  url: projet2 + "?txt.Chaussure=Blanc",
+  url: projet2 + "?txt.Chaussure=Blanc&txt.Lacet=Vert&txt.Semelle=Rouge",
 };
 
 const produits = [

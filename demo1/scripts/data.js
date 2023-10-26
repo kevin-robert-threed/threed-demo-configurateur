@@ -4,6 +4,7 @@ const projet = {
   nom: "Tee-shirt",
   baseUrl: projet1,
   url: projet1 + "?txt.Couleur=bleu",
+  groupements: [],
 };
 
 const produits = [
