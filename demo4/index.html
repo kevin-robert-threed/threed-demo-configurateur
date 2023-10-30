@@ -3,6 +3,7 @@
 <html lang="fr" class="enfsumxxr idc0_349">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script
       src="./static/twk-main.js.téléchargement"
       charset="UTF-8"
@@ -394,43 +395,8 @@
           window.sendinblue.page();
       })();
     </script>
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        "script",
-        "https://mc.yandex.ru/metrika/tag.js",
-        "ym"
-      );
-
-      ym(56322958, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-        ecommerce: "dataLayer",
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/56322958"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
+    
+   
     <meta property="og:type" content="product" />
     <meta
       property="og:url"
@@ -623,7 +589,7 @@
   <body
     id="product"
     class="lang-fr country-fr currency-eur layout-full-width page-product tax-display-disabled product-id-41 product-bureau-droit-panneaux product-id-category-140 product-id-manufacturer-0 product-id-supplier-0 product-available-for-order"
-  >
+  ><div id="app">
     <div class="menu-overlay">
       <svg width="34" height="34" viewBox="0 0 64 64">
         <g>
@@ -643,23 +609,12 @@
       ></iframe
     ></noscript>
     <header class="header">
-      <div class="header-banner">
-        <div class="container">
-          <p>
-            <strong
-              ><span style="font-size: 1rem">Besoins de conseils ?</span>
-              Contactez nous au<span style="font-size: 1rem">
-                03 20 27 80 89</span
-              ></strong
-            >
-          </p>
-        </div>
-      </div>
+  
       <div class="header-top">
         <div class="container">
           <div class="row align-items-center">
             <div class="header-top__logo flex-md-fill flex-lg-grow-0 col-auto">
-              <a href="https://www.gosto.com/">
+              <a  @click="getBack" >
                 <img
                   src="./static/logo-black.webp"
                   alt="Gosto France"
@@ -669,103 +624,10 @@
                 />
               </a>
             </div>
-            <div class="header-top__baseline-wrapper col-auto">
-              <a
-                href="https://www.gosto.com/promotions"
-                class="header-top__baseline"
-              >
-                <strong>Prix imbattables</strong>
-                Mobilier pour les Professionnels
-              </a>
-            </div>
-            <div class="header-top__search col-12 col-sm-auto">
-              <form method="get" action="https://www.gosto.com/recherche">
-                <input type="hidden" name="controller" value="search" />
-                <div class="input-group input-group--search">
-                  <input
-                    id="inputSearch"
-                    type="text"
-                    name="s"
-                    value=""
-                    placeholder="Rechercher un produit..."
-                    autocomplete="off"
-                    class="form-control"
-                    aria-label="Rechercher un produit"
-                  />
-                  <div class="input-group-append">
-                    <button type="submit" class="btn" aria-label="Rechercher">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+       
+       
             <div class="header-top__right col-auto">
-              <div class="header-top__reassurance">
-                <div class="header-top__reassurance-title">
-                  <span class="header-top__reassurance-icon">
-                    <img
-                      data-src="https://www.gosto.com/themes/gosto/assets/img/svg/lock.svg"
-                      alt="Sécurisé"
-                      width="12"
-                      height="12"
-                      class="lazy entered loaded"
-                      data-ll-status="loaded"
-                      src="./static/lock.svg"
-                    />
-                  </span>
-                  Paiement sécurisé des devis
-                </div>
-                <img
-                  data-src="https://www.gosto.com/themes/gosto/assets/img/reassurance/mastercard.webp"
-                  alt="Mastercard"
-                  width="30"
-                  height="20"
-                  class="lazy entered loaded"
-                  data-ll-status="loaded"
-                  src="./static/mastercard.webp"
-                />
-                <img
-                  data-src="https://www.gosto.com/themes/gosto/assets/img/reassurance/visa.webp"
-                  alt="Visa"
-                  width="30"
-                  height="20"
-                  class="lazy entered loaded"
-                  data-ll-status="loaded"
-                  src="./static/visa.webp"
-                />
-                <img
-                  data-src="https://www.gosto.com/themes/gosto/assets/img/reassurance/bank-cheque.webp"
-                  alt="Cheque"
-                  width="25"
-                  height="25"
-                  class="lazy entered loaded"
-                  data-ll-status="loaded"
-                  src="./static/bank-cheque.webp"
-                />
-                <div>
-                  <img
-                    data-src="https://www.gosto.com/themes/gosto/assets/img/reassurance/mandat.webp"
-                    alt="Mandat administratif"
-                    width="110"
-                    height="38"
-                    class="lazy entered loaded"
-                    data-ll-status="loaded"
-                    src="./static/mandat.webp"
-                  />
-                </div>
-                <div>
-                  <img
-                    data-src="https://www.gosto.com/themes/gosto/assets/img/reassurance/chorus-pro.webp"
-                    alt="Chorus Pro"
-                    width="100"
-                    height="42"
-                    class="lazy entered loaded"
-                    data-ll-status="loaded"
-                    src="./static/chorus-pro.webp"
-                  />
-                </div>
-              </div>
+          
               <div class="header-top__links flex-row">
                 <div class="contacts d-flex justify-content-end">
                   <a
@@ -7364,6 +7226,16 @@
       charset="UTF-8"
       src="./static/fr.js.téléchargement"
     ></script>
- 
+  </div>
   </body>
+
+  <script src="../scripts/components/d4/viewer-component.js"></script> 
+  <script src="../scripts/components/d4/menu-component.js"></script>
+  <script src="../scripts/components/d4/button-component.js"></script>
+  <script src="../scripts/components/d4/titre-component.js"></script>
+  <script src="../scripts/helpers.js"></script>
+  <script src="../scripts/base-data.js"></script>
+  <script src="./scripts/data.js"></script>
+  <script src="./scripts/use-vue.js"></script>
+</body>
 </html>
