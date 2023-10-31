@@ -4,69 +4,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script> 
     
-    <script
-      src="./static/twk-main.js.téléchargement"
-      charset="UTF-8"
-      crossorigin="*"
-    ></script>
-    <script
-      src="./static/twk-vendor.js.téléchargement"
-      charset="UTF-8"
-      crossorigin="*"
-    ></script>
-    <script
-      src="./static/twk-chunk-vendors.js.téléchargement"
-      charset="UTF-8"
-      crossorigin="*"
-    ></script>
-    <script
-      src="./static/twk-chunk-common.js.téléchargement"
-      charset="UTF-8"
-      crossorigin="*"
-    ></script>
-    <script
-      src="./static/twk-runtime.js.téléchargement"
-      charset="UTF-8"
-      crossorigin="*"
-    ></script>
-    <script
-      src="./static/twk-app.js.téléchargement"
-      charset="UTF-8"
-      crossorigin="*"
-    ></script>
-    <script async="" src="./static/gtm.js.téléchargement"></script>
-    <script
-      async=""
-      src="./static/default"
-      charset="UTF-8"
-      crossorigin="*"
-    ></script>
-    <script async="" src="./static/sdk.js.téléchargement"></script>
-    <script async="" src="./static/tag.js.téléchargement"></script>
-    <script
-      type="text/javascript"
-      id="sendinblue-js"
-      async=""
-      src="./static/sa.js.téléchargement"
-    ></script>
-    <script async="" src="./static/gtm.js(1).téléchargement"></script>
-    <script>
-      var dataLayer = [{}];
-    </script>
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NHH7PFW");
-    </script>
+     
+     
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link
       rel="canonical"
@@ -86,318 +27,15 @@
         href="https://fonts.googleapis.com/css?family=Satisfy|Poppins:300,400,i400,700&display=swap"
       />
     </noscript>
-    <link
-      rel="preload"
-      href="https://www.gosto.com/themes/gosto/assets/fonts/fa-solid-900.woff2"
-      as="font"
-      crossorigin=""
-    />
-    <link
-      rel="preload"
-      href="https://www.gosto.com/themes/gosto/assets/fonts/fa-brands-400.woff2"
-      as="font"
-      crossorigin=""
-    />
-    <link
-      rel="preload"
-      href="https://www.gosto.com/themes/gosto/assets/fonts/fa-regular-400.woff2"
-      as="font"
-      crossorigin=""
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://www.gosto.com/img/favicon.ico?1572949861"
-    />
-    <link
-      rel="icon"
-      type="image/vnd.microsoft.icon"
-      href="https://www.gosto.com/img/favicon.ico?1572949861"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://www.gosto.com/img/favicon-32x32.png?1572949861"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://www.gosto.com/img/favicon-16x16.png?1572949861"
-      sizes="16x16"
-    />
+   
     <link
       rel="stylesheet"
       href="./static/theme-0b33851298.css"
       type="text/css"
       media="all"
     />
-    <script type="text/javascript">
-      var prestashop = {
-        cart: {
-          products: [],
-          totals: {
-            total: {
-              type: "total",
-              label: "Total Montant",
-              amount: 0,
-              value: "0,00\u00a0\u20ac",
-            },
-            total_including_tax: {
-              type: "total",
-              label: "Total TTC",
-              amount: 0,
-              value: "0,00\u00a0\u20ac",
-            },
-            total_excluding_tax: {
-              type: "total",
-              label: "Total HT :",
-              amount: 0,
-              value: "0,00\u00a0\u20ac",
-            },
-          },
-          subtotals: {
-            products_without_ecotax: {
-              type: "products_without_ecotax",
-              label: " Montant HT",
-              amount: 0,
-              value: "0,00\u00a0\u20ac",
-            },
-            ecotax: {
-              type: "ecotax",
-              label: "Ecocontribution HT",
-              amount: 0,
-              value: "0,00\u00a0\u20ac",
-            },
-            products: {
-              type: "products",
-              label: "Sous-total",
-              amount: 0,
-              value: "0,00\u00a0\u20ac",
-            },
-            discounts: null,
-            shipping: {
-              type: "shipping",
-              label: "Livraison",
-              amount: 0,
-              value: "chiffrer \u00e0 l\u2019\u00e9tape suivante",
-            },
-            tax: null,
-          },
-          products_count: 0,
-          summary_string: "0 articles",
-          vouchers: { allowed: 0, added: [] },
-          discounts: [],
-          minimalPurchase: 0,
-          minimalPurchaseRequired: "",
-        },
-        currency: {
-          name: "euro",
-          iso_code: "EUR",
-          iso_code_num: "978",
-          sign: "\u20ac",
-        },
-        customer: {
-          lastname: null,
-          firstname: null,
-          email: null,
-          birthday: null,
-          newsletter: null,
-          newsletter_date_add: null,
-          optin: null,
-          website: null,
-          company: null,
-          siret: null,
-          ape: null,
-          is_logged: false,
-          gender: { type: null, name: null },
-          addresses: [],
-        },
-        language: {
-          name: "Fran\u00e7ais (French)",
-          iso_code: "fr",
-          locale: "fr-FR",
-          language_code: "fr",
-          is_rtl: "0",
-          date_format_lite: "d\/m\/Y",
-          date_format_full: "d\/m\/Y H:i:s",
-          id: 1,
-        },
-        page: {
-          title: "",
-          canonical: null,
-          meta: {
-            title: "Bureau professionnel Bois Gris- Gamme Panneau- Gosto",
-            description:
-              "Bureaux professionnel en Bois Gris pas cher- Diff\u00e9rents coloris de plateaux et dimensions- Devis 1 H- Exp\u00e9dition 24 H toute France",
-            keywords: "",
-            robots: "index",
-          },
-          page_name: "product",
-          body_classes: {
-            "lang-fr": true,
-            "lang-rtl": false,
-            "country-FR": true,
-            "currency-EUR": true,
-            "layout-full-width": true,
-            "page-product": true,
-            "tax-display-disabled": true,
-            "product-id-41": true,
-            "product-Bureau Droit Panneaux": true,
-            "product-id-category-140": true,
-            "product-id-manufacturer-0": true,
-            "product-id-supplier-0": true,
-            "product-available-for-order": true,
-          },
-          admin_notifications: [],
-        },
-        shop: {
-          name: "Gosto France",
-          logo: "\/img\/gosto-logo-1572949152.jpg",
-          stores_icon: "\/img\/logo_stores.png",
-          favicon: "\/img\/favicon.ico",
-        },
-        urls: {
-          base_url: "https:\/\/www.gosto.com\/",
-          current_url:
-            "https:\/\/www.gosto.com\/41-bureau-droit-gamme-panneaux.html",
-          shop_domain_url: "https:\/\/www.gosto.com",
-          img_ps_url: "https:\/\/www.gosto.com\/img\/",
-          img_cat_url: "https:\/\/www.gosto.com\/img\/c\/",
-          img_lang_url: "https:\/\/www.gosto.com\/img\/l\/",
-          img_prod_url: "https:\/\/www.gosto.com\/img\/p\/",
-          img_manu_url: "https:\/\/www.gosto.com\/img\/m\/",
-          img_sup_url: "https:\/\/www.gosto.com\/img\/su\/",
-          img_ship_url: "https:\/\/www.gosto.com\/img\/s\/",
-          img_store_url: "https:\/\/www.gosto.com\/img\/st\/",
-          img_col_url: "https:\/\/www.gosto.com\/img\/co\/",
-          img_url: "https:\/\/www.gosto.com\/themes\/gosto\/assets\/img\/",
-          css_url: "https:\/\/www.gosto.com\/themes\/gosto\/assets\/css\/",
-          js_url: "https:\/\/www.gosto.com\/themes\/gosto\/assets\/js\/",
-          pic_url: "https:\/\/www.gosto.com\/upload\/",
-          pages: {
-            address: "https:\/\/www.gosto.com\/adresse",
-            addresses: "https:\/\/www.gosto.com\/adresses",
-            authentication: "https:\/\/www.gosto.com\/connexion",
-            cart: "https:\/\/www.gosto.com\/panier",
-            category: "https:\/\/www.gosto.com\/index.php?controller=category",
-            cms: "https:\/\/www.gosto.com\/index.php?controller=cms",
-            contact: "https:\/\/www.gosto.com\/nous-contacter",
-            discount: "https:\/\/www.gosto.com\/reduction",
-            guest_tracking: "https:\/\/www.gosto.com\/suivi-commande-invite",
-            history: "https:\/\/www.gosto.com\/historique-commandes",
-            identity: "https:\/\/www.gosto.com\/identite",
-            index: "https:\/\/www.gosto.com\/",
-            my_account: "https:\/\/www.gosto.com\/mon-compte",
-            order_confirmation:
-              "https:\/\/www.gosto.com\/confirmation-commande",
-            order_detail:
-              "https:\/\/www.gosto.com\/index.php?controller=order-detail",
-            order_follow: "https:\/\/www.gosto.com\/suivi-commande",
-            order: "https:\/\/www.gosto.com\/commande",
-            order_return:
-              "https:\/\/www.gosto.com\/index.php?controller=order-return",
-            order_slip: "https:\/\/www.gosto.com\/avoirs",
-            pagenotfound: "https:\/\/www.gosto.com\/page-introuvable",
-            password: "https:\/\/www.gosto.com\/recuperation-mot-de-passe",
-            pdf_invoice:
-              "https:\/\/www.gosto.com\/index.php?controller=pdf-invoice",
-            pdf_order_return:
-              "https:\/\/www.gosto.com\/index.php?controller=pdf-order-return",
-            pdf_order_slip:
-              "https:\/\/www.gosto.com\/index.php?controller=pdf-order-slip",
-            prices_drop: "https:\/\/www.gosto.com\/promotions",
-            product: "https:\/\/www.gosto.com\/index.php?controller=product",
-            search: "https:\/\/www.gosto.com\/recherche",
-            sitemap: "https:\/\/www.gosto.com\/plan-site",
-            stores: "https:\/\/www.gosto.com\/magasins",
-            supplier: "https:\/\/www.gosto.com\/fournisseur",
-            register: "https:\/\/www.gosto.com\/connexion?create_account=1",
-            order_login: "https:\/\/www.gosto.com\/commande?login=1",
-            fractopacks: "https:\/\/www.gosto.com\/module\/fractopacks\/ajax",
-          },
-          theme_assets: "\/themes\/gosto\/assets\/",
-          actions: { logout: "https:\/\/www.gosto.com\/?mylogout=" },
-        },
-        configuration: {
-          display_taxes_label: false,
-          is_catalog: false,
-          show_prices: true,
-          opt_in: { partner: true },
-          quantity_discount: { type: "discount", label: "Remise" },
-          voucher_enabled: 0,
-          return_enabled: 0,
-        },
-        field_required: [],
-        breadcrumb: {
-          links: [
-            { title: "Accueil", url: "https:\/\/www.gosto.com\/" },
-            {
-              title: "Bureaux et Tables",
-              url: "https:\/\/www.gosto.com\/3-bureaux-et-tables",
-            },
-            {
-              title: "Bureaux professionnels",
-              url: "https:\/\/www.gosto.com\/14-bureau-entreprise",
-            },
-            {
-              title: "Bureaux Droits Individuel",
-              url: "https:\/\/www.gosto.com\/140-bureaux-droits",
-            },
-            {
-              title: "Bureau Droit Panneaux",
-              url: "https:\/\/www.gosto.com\/41-bureau-droit-gamme-panneaux.html",
-            },
-          ],
-          count: 5,
-        },
-        link: { protocol_link: "https:\/\/", protocol_content: "https:\/\/" },
-        time: 1698685801,
-        static_token: "c533f502f18c10fbf641225ef693f8ee",
-        token: "abf932b254dc6390dbf86e7ee7456b60",
-      };
-    </script>
-    <script type="text/javascript">
-      (function () {
-        window.sib = {
-          equeue: [],
-          client_key: "jsab894yxmnfv7pyrj24w1io",
-        };
-
-        window.sendinblue = {};
-        for (
-          var j = ["track", "identify", "trackLink", "page"], i = 0;
-          i < j.length;
-          i++
-        ) {
-          (function (k) {
-            window.sendinblue[k] = function () {
-              var arg = Array.prototype.slice.call(arguments);
-              (
-                window.sib[k] ||
-                function () {
-                  var t = {};
-                  t[k] = arg;
-                  window.sib.equeue.push(t);
-                }
-              )(arg[0], arg[1], arg[2]);
-            };
-          })(j[i]);
-        }
-        var n = document.createElement("script"),
-          i = document.getElementsByTagName("script")[0];
-        (n.type = "text/javascript"),
-          (n.id = "sendinblue-js"),
-          (n.async = !0),
-          (n.src =
-            "https://sibautomation.com/sa.js?plugin=prestashop&key=" +
-            window.sib.client_key),
-          i.parentNode.insertBefore(n, i),
-          window.sendinblue.page();
-      })();
-    </script>
-    
+     
+  
    
     <meta property="og:type" content="product" />
     <meta
@@ -423,34 +61,7 @@
     <meta property="product:price:currency" content="EUR" />
     <meta property="product:weight:value" content="45.000000" />
     <meta property="product:weight:units" content="kg" />
-    <script
-      charset="utf-8"
-      src="./static/twk-chunk-2c776523.js.téléchargement"
-    ></script>
-    <script
-      charset="utf-8"
-      src="./static/twk-chunk-9294da6c.js.téléchargement"
-    ></script>
-    <script
-      charset="utf-8"
-      src="./static/twk-chunk-2d0b383d.js.téléchargement"
-    ></script>
-    <script
-      charset="utf-8"
-      src="./static/twk-chunk-48f3b594.js.téléchargement"
-    ></script>
-    <script
-      charset="utf-8"
-      src="./static/twk-chunk-4fe9d5dd.js.téléchargement"
-    ></script>
-    <script
-      charset="utf-8"
-      src="./static/twk-chunk-2d0b9454.js.téléchargement"
-    ></script>
-    <script
-      charset="utf-8"
-      src="./static/twk-chunk-24d8db78.js.téléchargement"
-    ></script>
+     
     <style type="text/css">
 
  
@@ -509,18 +120,7 @@
         }
       }
     </style>
-    <script
-      src="./static/emojione.min.js.téléchargement"
-      type="text/javascript"
-      async=""
-      defer=""
-    ></script>
-    <script
-      src="./static/emojione.min.js.téléchargement"
-      type="text/javascript"
-      async=""
-      defer=""
-    ></script>
+    
     <style type="text/css">
       @keyframes tawkMaxOpen {
         0% {
@@ -590,7 +190,10 @@
       }
     </style>
   </head>
-  <body
+ 
+
+<body  
+ 
     id="product"
     class="lang-fr country-fr currency-eur layout-full-width page-product tax-display-disabled product-id-41 product-bureau-droit-panneaux product-id-category-140 product-id-manufacturer-0 product-id-supplier-0 product-available-for-order"
   ><div id="app">
@@ -604,14 +207,7 @@
         </g>
       </svg>
     </div>
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id="
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+ 
     <header class="header">
   
       <div class="header-top">
@@ -1945,11 +1541,7 @@
           </nav>
         </div>
       </div>
-      <script>
-        dataLayer.push({
-          ab_test: "A",
-        });
-      </script>
+ 
       <div class="header-content">
         <div class="container breadcrumb_container">
           <ol
@@ -2048,15 +1640,7 @@
     <aside id="notifications"><div class="container"></div></aside>
     <main id="content-wrapper" class="">
       <div class="container">
-        <script>
-          var productDataLayer;
-          document.addEventListener("DOMContentLoaded", function () {
-            productDataLayer = JSON.parse(
-              '{"productName":"Bureau Droit Panneaux","productId":"41","productUnitPrice":178.8,"productBrand":false,"productVariant":11186,"productColor":"Coloris Plateau : H\u00eatre","productOriginalPrice":178.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux Droits Individuel"}'
-            );
-            window.gadl.productDetail(productDataLayer);
-          });
-        </script>
+       
         <section
           id="main"
           itemscope=""
@@ -2088,10 +1672,19 @@
                         class="product-images__main js-product-images-main swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal"
                       >
 
-                      <threed-viewer-component
+        
+                                   <iframe id="threed-iframe" 
+                                    width="100%" 
+                                    height="500"                                
+                                   frameborder="0" 
+                                   class="viewer-iframe"   
+                                   allowfullscreen></iframe>      
+                      
+
+                      <!-- <threed-viewer-component
                       ref="viewer"
                       :integration="integration" 
-                    />
+                    /> -->
 
                         <div class="swiper-wrapper">
                           <div
@@ -2523,15 +2116,14 @@
                     <div
                       class="tab-pane fade"
                       id="product-details"
-                      data-product='{"id_shop_default":"1","id_manufacturer":"0","id_supplier":"0","reference":"41","is_virtual":"0","delivery_in_stock":"","delivery_out_stock":"","id_category_default":"140","on_sale":"0","online_only":"0","ecotax":0,"minimal_quantity":"1","low_stock_threshold":null,"low_stock_alert":"0","price":262.8,"unity":"","unit_price_ratio":"0.000000","additional_shipping_cost":"0.00","customizable":"0","text_fields":"0","uploadable_files":"0","redirect_type":"404","id_type_redirected":"0","available_for_order":"1","available_date":null,"show_condition":"0","condition":"new","show_price":"1","indexed":"1","visibility":"both","cache_default_attribute":"11186","advanced_stock_management":"0","date_add":"2009-03-05 14:18:54","date_upd":"2023-05-10 13:45:33","pack_stock_type":"0","meta_description":"Bureaux professionnel en Bois Gris pas cher- Diff\u00e9rents coloris de plateaux et dimensions- Devis 1 H- Exp\u00e9dition 24 H toute France","meta_keywords":"","meta_title":"Bureau professionnel Bois Gris- Gamme Panneau- Gosto","link_rewrite":"bureau-droit-gamme-panneaux","name":"Bureau Droit Panneaux","meta_name":"","description":"&lt;p&gt;\u2022 Plateau \u00e9paisseur 25 mm&lt;br \/&gt; \u2022 Densit\u00e9 du plateau &amp;gt;700kg\/m\u00b3&lt;\/p&gt;\n&lt;p&gt;Bureaux droit pi\u00e9tement panneaux sont des bureaux fonctionnels et basiques qui s&#39;adaptent \u00e0 tous vos besoins:&lt;br \/&gt; - Robuste&lt;br \/&gt; - Pi\u00e9tement en panneau de 25mm&lt;br \/&gt; - Passage de c\u00e2ble pr\u00e9vu sur le plateau&lt;\/p&gt;\n&lt;h2 style=\"text-decoration:underline;\"&gt;Dimensions du Bureau droit Panneau:&lt;\/h2&gt;\n&lt;p&gt;H.73 x L.120 x P.80 cm\u00a0&lt;br \/&gt; H.73 x L.140 x P.80 cm&lt;br \/&gt; H.73 x L.160 x P.80 cm&lt;br \/&gt; H.73 x L.180 x P80 cm\u00a0&lt;\/p&gt;\n&lt;h2 style=\"text-decoration:underline;\"&gt;Plateau du bureau droit :&lt;\/h2&gt;\n&lt;p&gt;* Plateau en panneau de particules m\u00e9lamin\u00e9es&lt;br \/&gt; * Chant droit antichocs de 3 mm&lt;br \/&gt; * Epaisseur de 25 mm&lt;br \/&gt; * Rev\u00eatement anti-rayures, anti-traces&lt;br \/&gt; * Densit\u00e9: &amp;gt;700 kg\/m3&lt;\/p&gt;\n&lt;h2 style=\"text-decoration:underline;\"&gt;Pi\u00e9tement du bureau droit :&lt;\/h2&gt;\n&lt;p&gt;* Pi\u00e9tement en panneau de particules m\u00e9lamin\u00e9es&lt;br \/&gt; * Epaisseur de 25 mm&lt;br \/&gt; * V\u00e9rins r\u00e9glables de courses de 20 mm&lt;br \/&gt; * Voile de fond structurelle de 20 mm d&#39;\u00e9paisseur&lt;br \/&gt; * Finition anthracite&lt;br \/&gt; * Chant droit antichocs de 3 mm&lt;br \/&gt; * Hauteur du pieds: 70 cm&lt;br \/&gt; * Assemblage du plateau par inserts m\u00e9talliques&lt;br \/&gt; * Montage facile : assemblage par insert m\u00e9tallique et vis \u00e0 bois.&lt;br \/&gt; 2 personnes sont n\u00e9cessaires pour le montage. Monatge du bureau tr\u00e8s simple.&lt;br \/&gt;&lt;br \/&gt; Conditionnement : 1 colis livr\u00e9 sur palette.&lt;br \/&gt;&lt;br \/&gt;&lt;span style=\"color:#f08d52;\"&gt;D\u00e9couvrez &lt;a href=\"\/15-bureaux-gamme-panneaux\"&gt;&lt;span style=\"color:#f08d52;\"&gt;la gamme compl\u00e8te de Bureaux de la Gamme Panneaux&lt;\/span&gt;&lt;\/a&gt;&lt;br \/&gt; D\u00e9couvrez &lt;a href=\"\/140-bureaux-droits\"&gt;&lt;span style=\"color:#f08d52;\"&gt;l&#39;offre compl\u00e8te des Bureaux droits&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;br \/&gt;&lt;br \/&gt; Nous vous proposons une gamme compl\u00e8te de &lt;a href=\"\/\" title=\"mobilier de bureau\"&gt;mobilier de bureau&lt;\/a&gt;\u00a0 pour entreprise: n&#39;h\u00e9sitez \u00e0 pas \u00e0 naviguer sur notre site et d\u00e9couvrez l&#39;ensemble de notre gamme &lt;a href=\"\/14-bureau-entreprise\"&gt;bureau professionnel&lt;\/a&gt;\u00a0: bureau compact, bureau sym\u00e9trique, bureau open space, bureau ministre...&lt;\/p&gt;","description_short":"&lt;p&gt;Les &lt;strong&gt;Bureaux droits&lt;\/strong&gt; pi\u00e9tement panneaux sont des bureaux fonctionnels et basiques qui s&#39;adaptent \u00e0 tous vos besoins. Son pi\u00e9tement de coloris anthracite procure un look moderne qui lui permet de s\"adapter facilement \u00e0 vos espaces de travail. 4 dimensions et 4 coloris de plateaux sont disponibles.&lt;br \/&gt; \u00a0&lt;\/p&gt;","available_now":"","available_later":"","id":41,"id_product":41,"out_of_stock":2,"new":0,"id_product_attribute":11198,"quantity_wanted":1,"extraContent":[{"title":"Avis clients (4)","content":"&lt;\/div&gt; &lt;section class=\"sidebar sidebar--right\" data-sidebar=\"product-avisverifies\"&gt; &lt;div class=\"sidebar__outer\"&gt; &lt;div class=\"sidebar__header flex-wrap\"&gt; &lt;div class=\"sidebar__title mb-4\"&gt; &lt;span id=\"reviewCount\" itemprop=\"reviewCount\" &gt;\n                  4\n               &lt;\/span&gt;\n               avis clients\n            &lt;\/div&gt; &lt;div class=\"netreviews_rating_content\"&gt; &lt;div class=\"netreviews_global_rating\"&gt; &lt;div class=\"d-flex row align-items-center\"&gt; &lt;div class=\"col-6 d-flex align-items-center\"&gt; &lt;div class=\"my-0 h3\"&gt;&lt;span class=\"font-weight-bold\"&gt;3.8&lt;\/span&gt;&lt;span class=\"small\"&gt;\/5&lt;\/span&gt;&lt;\/div&gt; &lt;div style=\"height:1.2rem\"&gt; &lt;div class=\"netreviews_bg_stars_big\"&gt; &lt;div&gt; &lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div style=\"color:#FFCD00\"&gt; &lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\" style=\"width:15%;\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div class=\"col-6\"&gt; &lt;a target=\"_blank\" href=\"https:\/\/www.avis-verifies.com\/avis-clients\/gosto.com\"&gt; &lt;img class=\"img-fluid\" src=\"\/modules\/netreviews\/views\/img\/logo_full_fr.png\"&gt; &lt;\/a&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;a href=\"#\" class=\"sidebar__close\" aria-label=\"Fermer\" data-sidebar-close&gt; &lt;i class=\"fa fa-times icon icon--close icon--inline-block mr-3\"&gt;&lt;\/i&gt; &lt;\/a&gt; &lt;\/div&gt; &lt;div class=\"sidebar__inner\"&gt; &lt;div class=\"sidebar__content product-sidebar-features__content\"&gt; &lt;section class=\"mt-3\" id=\"netreviews_reviews_tab\"&gt; &lt;div id=\"netreviews_rating_section\" data-group-name=\"\" data-url-ajax=\"\/modules\/\" data-idshop=\"\" data-productid=\"41\" data-current-page=\"1\" data-current-option=\"horodate_DESC\" data-sortbynote=\"0\" data-max-page=\"1\"&gt; &lt;div itemprop=\"aggregateRating\" itemscope itemtype=\"http:\/\/schema.org\/AggregateRating\"&gt; &lt;meta itemprop= \"ratingValue\" content= \"3.8\"&gt; &lt;meta itemprop= \"bestRating\" content= \"5\"&gt; &lt;meta itemprop= \"worstRating\" content= \"1\"&gt; &lt;meta itemprop= \"ratingCount\" content= \"4\"&gt; &lt;input type=\"hidden\" value=\"bcf29c6a-00e4-9de4-21e9-aba2d1c5816f\" id=\"av_idwebsite\"\/&gt; &lt;input type=\"hidden\" value=\"https:\/\/www.avis-verifies.com\/index.php?action=act_api_product_reviews_helpful\" id=\"avHelpfulURL\"\/&gt; &lt;input type=\"hidden\" value=\"Merci, votre vote sera publi\u00e9 prochainement.\" id=\"avHelpfulSuccessMessage\"\/&gt; &lt;input type=\"hidden\" value=\"Une erreur s&#39;est produite.\" id=\"avHelpfulErrorMessage\"\/&gt; &lt;\/div&gt; &lt;div class=\"netreviews_reviews_section\"&gt; &lt;div class=\"loader_av\"&gt;&lt;\/div&gt; &lt;div class=\"netreviews_review_part mb-3 first-child\" &gt; &lt;div class=\"d-flex flex-row\"&gt; &lt;div class=\"netreviews_customer_name col-12\"&gt; &lt;div class=\"d-flex justify-content-between\"&gt; &lt;span class=\"customer\"&gt;Jeannine D.&lt;\/span&gt; &lt;span class=\"published\"&gt;&lt;small&gt;11\/10\/2023&lt;\/small&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div class=\"content mt-2\"&gt; &lt;div class=\"netreviews_review_rate_and_stars mb-1\"&gt; &lt;div class=\"netreviews_font_stars\"&gt; &lt;div&gt; &lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div style=\"color:#FFCD00\"&gt; &lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div class=\"netreviews_customer_review\"&gt;\n                        Beau meuble de rangement d\u00e9j\u00e0 mont\u00e9 \u00e0 la livraison   Seul b\u00e9mol il manquait un pied sinon c \u00e9tait parfait\n                     &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div class=\"netreviews_review_part mb-3\" &gt; &lt;div class=\"d-flex flex-row\"&gt; &lt;div class=\"netreviews_customer_name col-12\"&gt; &lt;div class=\"d-flex justify-content-between\"&gt; &lt;span class=\"customer\"&gt;Benjamin M.&lt;\/span&gt; &lt;span class=\"published\"&gt;&lt;small&gt;01\/08\/2023&lt;\/small&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div class=\"content mt-2\"&gt; &lt;div class=\"netreviews_review_rate_and_stars mb-1\"&gt; &lt;div class=\"netreviews_font_stars\"&gt; &lt;div&gt; &lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div style=\"color:#FFCD00\"&gt; &lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div class=\"netreviews_customer_review\"&gt;\n                        TOUJOURS PAS RE\u00c7UE  ne peut pas \u00e9valuer\n                     &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div class=\"netreviews_review_part mb-3\" &gt; &lt;div class=\"d-flex flex-row\"&gt; &lt;div class=\"netreviews_customer_name col-12\"&gt; &lt;div class=\"d-flex justify-content-between\"&gt; &lt;span class=\"customer\"&gt;Nathalie R.&lt;\/span&gt; &lt;span class=\"published\"&gt;&lt;small&gt;17\/05\/2023&lt;\/small&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div class=\"content mt-2\"&gt; &lt;div class=\"netreviews_review_rate_and_stars mb-1\"&gt; &lt;div class=\"netreviews_font_stars\"&gt; &lt;div&gt; &lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div style=\"color:#FFCD00\"&gt; &lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div class=\"netreviews_customer_review\"&gt;\n                        Juste un d\u00e9tail il y avait un pet de 5cm sur une ar\u00eate du plateau principal (et pas sur le carton) mais invisible une fois mont\u00e9 donc pas de souci. Montage facile et bonne qualit\u00e9.\n                     &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div class=\"netreviews_review_part mb-3\" &gt; &lt;div class=\"d-flex flex-row\"&gt; &lt;div class=\"netreviews_customer_name col-12\"&gt; &lt;div class=\"d-flex justify-content-between\"&gt; &lt;span class=\"customer\"&gt;Nolwenn J.&lt;\/span&gt; &lt;span class=\"published\"&gt;&lt;small&gt;26\/04\/2023&lt;\/small&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div class=\"content mt-2\"&gt; &lt;div class=\"netreviews_review_rate_and_stars mb-1\"&gt; &lt;div class=\"netreviews_font_stars\"&gt; &lt;div&gt; &lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star grey\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;div style=\"color:#FFCD00\"&gt; &lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt;&lt;span class=\"nr-icon nr-star\"&gt;&lt;\/span&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div class=\"netreviews_customer_review\"&gt;\n                        Tr\u00e8s bonne qualit\u00e9\n                     &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;div id=\"netreviews_media_modal\"&gt; &lt;div id=\"netreviews_media_content\"&gt;&lt;\/div&gt; &lt;a id=\"netreviews_media_close\"&gt;\u00d7&lt;\/a&gt; &lt;\/div&gt; &lt;\/section&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/div&gt; &lt;\/section&gt; &lt;div&gt;","attr":{"id":"netreviews_tab","class":"netreviews_tab"},"moduleName":"netreviews"}],"allow_oosp":1,"category":"bureaux-droits","category_name":"Bureaux Droits Individuel","link":"https:\/\/www.gosto.com\/41-bureau-droit-gamme-panneaux.html","attribute_price":70,"price_tax_exc":219,"price_without_reduction":219,"reduction":0,"specific_prices":[],"quantity":898,"quantity_all_versions":12817,"id_image":"fr-default","features":[{"name":"Dimension du Plateau","value":"140 x 80","id_feature":"5"},{"name":"Dimension du Plateau","value":"180 x 80","id_feature":"5"},{"name":"Dimension du Plateau","value":"120 x 80","id_feature":"5"},{"name":"Dimension du Plateau","value":"160 x 80","id_feature":"5"},{"name":"Forme du plateau","value":"Rectangle","id_feature":"8"},{"name":"Gamme","value":"Panneaux","id_feature":"9"},{"name":"Coloris du Pi\u00e9tement","value":"Anthracite","id_feature":"25"},{"name":"Coloris du Pi\u00e9tement","value":"Noir","id_feature":"25"}],"attachments":[{"id_product":"41","id_attachment":"15","file":"NoticedemontagebureaudroitPANNEAU.pdf","file_name":"Notice de montage bureau droit PANNEAU.pdf","file_size":"303080","mime":"application\/pdf","id_lang":"1","name":"Plan de montage","description":"Bureau droit Panneau"},{"id_product":"41","id_attachment":"92","file":"f61160c11ab0086684e7edb3cb6ac1a292389f65","file_name":"GammePanneau.pdf","file_size":"413548","mime":"application\/pdf","id_lang":"1","name":"Fiche technique","description":"Fiche technique bureau gamme panneau"}],"virtual":0,"pack":0,"packItems":[],"nopackprice":0,"customization_required":false,"attributes":{"1":{"id_attribute":"8","id_attribute_group":"1","name":"L180xP80cm","group":"Dimension","reference":"41-11198","ean13":"","isbn":"","upc":""},"96":{"id_attribute":"512","id_attribute_group":"96","name":"H\u00eatre","group":"Coloris Plateau","reference":"41-11198","ean13":"","isbn":"","upc":""}},"rate":20,"tax_name":"TVA FR 20%","ecotax_rate":0,"unit_price":0,"customizations":{"fields":[]},"id_customization":0,"is_customizable":false,"show_quantities":false,"quantity_label":"Produits","quantity_discounts":[],"customer_group_discount":0}'
-                      role="tabpanel"
+                            role="tabpanel"
                     >
                       <meta itemprop="brand" content="Gosto" />
                       <div class="product-reference">
                         <label class="label">Réf : </label>
                         <span itemprop="sku">41-11198</span>
                       </div>
-                      <router-view></router-view>
+                      
                       <div class="product-out-of-stock"></div>
                       <section class="product-features">
                         <p class="content-title">Fiche technique</p>
@@ -2982,7 +2574,9 @@
             <div class="col-md-6 offset-ml-1">
               <div class="product-main-wrapper sticky-top">
                 <div class="product-top align-items-end">
-                  <div class="product-reference mb-md-1">Réf : 41-11198</div>
+                  <div class="product-reference mb-md-1">Réf : 41-11198   <router-view> </router-view> </div>
+                  
+                 
                   <div class="netreviews_stars_light justify-content-sm-end">
                     <a
                       href="javascript:av_widget_click()"
@@ -3336,13 +2930,8 @@
                   class="product-slider__slide swiper-slide swiper-slide-active"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Caisson de bureau \u00e0\u00a0 roulettes 3T Wist","productId":"56","productUnitPrice":166.8,"productBrand":false,"productVariant":12664,"productColor":"Coloris : H\u00eatre","productOriginalPrice":166.8,"productCategory1":"Meuble de rangement","productCategory2":"Caisson bureau","productImpressionListPosition":1}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+                
+                
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits compl\u00e9mentaires","product":{"productName":"Caisson de bureau \u00e0\u00a0 roulettes 3T Wist","productId":"56","productUnitPrice":166.8,"productBrand":false,"productVariant":12664,"productColor":"Coloris : H\u00eatre","productOriginalPrice":166.8,"productCategory1":"Meuble de rangement","productCategory2":"Caisson bureau","productImpressionListPosition":1}}}'
                     class="product-miniature js-product-miniature"
@@ -3483,13 +3072,7 @@
                   class="product-slider__slide swiper-slide swiper-slide-next"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Armoire portes battantes en bois Wist H180xL80xP45cm","productId":"108","productUnitPrice":298.8,"productBrand":false,"productVariant":15815,"productColor":"Coloris : H\u00eatre","productOriginalPrice":298.8,"productCategory1":"Meuble de rangement","productCategory2":"Armoire de bureau","productCategory3":"Armoire \u00e0 portes battantes","productImpressionListPosition":2}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+ 
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits compl\u00e9mentaires","product":{"productName":"Armoire portes battantes en bois Wist H180xL80xP45cm","productId":"108","productUnitPrice":298.8,"productBrand":false,"productVariant":15815,"productColor":"Coloris : H\u00eatre","productOriginalPrice":298.8,"productCategory1":"Meuble de rangement","productCategory2":"Armoire de bureau","productCategory3":"Armoire \u00e0 portes battantes","productImpressionListPosition":2}}}'
                     class="product-miniature js-product-miniature"
@@ -3618,13 +3201,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Fauteuil de bureau Axo, syst\u00e8me basculant avec ou sans accoudoir","productId":"290","productUnitPrice":166.8,"productBrand":false,"productVariant":10194,"productColor":"Coloris : Noir","productOriginalPrice":166.8,"productCategory1":"Assise professionnelle","productCategory2":"Si\u00e8ge et Fauteuil de Bureau","productImpressionListPosition":3}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+ 
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits compl\u00e9mentaires","product":{"productName":"Fauteuil de bureau Axo, syst\u00e8me basculant avec ou sans accoudoir","productId":"290","productUnitPrice":166.8,"productBrand":false,"productVariant":10194,"productColor":"Coloris : Noir","productOriginalPrice":166.8,"productCategory1":"Assise professionnelle","productCategory2":"Si\u00e8ge et Fauteuil de Bureau","productImpressionListPosition":3}}}'
                     class="product-miniature js-product-miniature"
@@ -3708,13 +3285,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Lampe de bureau Luminus avec ampoule","productId":"740","productUnitPrice":78,"productBrand":false,"productVariant":15141,"productColor":"Coloris : Orange","productOriginalPrice":78,"productCategory1":"Accessoires et am\u00e9nagement bureau","productCategory2":"Lampes de bureau","productImpressionListPosition":4}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+  
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits compl\u00e9mentaires","product":{"productName":"Lampe de bureau Luminus avec ampoule","productId":"740","productUnitPrice":78,"productBrand":false,"productVariant":15141,"productColor":"Coloris : Orange","productOriginalPrice":78,"productCategory1":"Accessoires et am\u00e9nagement bureau","productCategory2":"Lampes de bureau","productImpressionListPosition":4}}}'
                     class="product-miniature js-product-miniature"
@@ -3872,13 +3443,7 @@
                   class="product-slider__slide swiper-slide swiper-slide-active"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Table de r\u00e9union 8 personnes Sierra L160 x P164 cm","productId":"894","productUnitPrice":550.8,"productBrand":false,"productVariant":18368,"productColor":"Coloris Plateau : Blanc","productOriginalPrice":550.8,"productCategory1":"Bureaux et Tables","productCategory2":"Table de r\u00e9union","productCategory3":"Table de r\u00e9union rectangulaire ","productImpressionListPosition":1}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+ 
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Table de r\u00e9union 8 personnes Sierra L160 x P164 cm","productId":"894","productUnitPrice":550.8,"productBrand":false,"productVariant":18368,"productColor":"Coloris Plateau : Blanc","productOriginalPrice":550.8,"productCategory1":"Bureaux et Tables","productCategory2":"Table de r\u00e9union","productCategory3":"Table de r\u00e9union rectangulaire ","productImpressionListPosition":1}}}'
                     class="product-miniature js-product-miniature"
@@ -4005,13 +3570,7 @@
                   class="product-slider__slide swiper-slide swiper-slide-next"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Bureau droit color\u00e9 Pure","productId":"995","productUnitPrice":466.8,"productBrand":false,"productVariant":19868,"productColor":"Coloris : Terracotta","productOriginalPrice":466.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux Droits Individuel","productImpressionListPosition":2}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+ 
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Bureau droit color\u00e9 Pure","productId":"995","productUnitPrice":466.8,"productBrand":false,"productVariant":19868,"productColor":"Coloris : Terracotta","productOriginalPrice":466.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux Droits Individuel","productImpressionListPosition":2}}}'
                     class="product-miniature js-product-miniature"
@@ -4118,13 +3677,8 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Table R\u00e9glable Hauteur avec tableau \u00e9critoire sur roulettes TALENT 500","productId":"774","productUnitPrice":1438.8,"productBrand":false,"productVariant":16186,"productColor":"Coloris : Blanc","productOriginalPrice":1438.8,"productCategory1":"Bureaux et Tables","productCategory2":"Tables de r\u00e9union pliantes et polyvalentes","productImpressionListPosition":3}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+               
+               
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Table R\u00e9glable Hauteur avec tableau \u00e9critoire sur roulettes TALENT 500","productId":"774","productUnitPrice":1438.8,"productBrand":false,"productVariant":16186,"productColor":"Coloris : Blanc","productOriginalPrice":1438.8,"productCategory1":"Bureaux et Tables","productCategory2":"Tables de r\u00e9union pliantes et polyvalentes","productImpressionListPosition":3}}}'
                     class="product-miniature js-product-miniature"
@@ -4210,13 +3764,8 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Table basse longue Kub H.30 cm","productId":"1039","productUnitPrice":655.2,"productBrand":false,"productVariant":20041,"productColor":"Coloris : Noir","productOriginalPrice":655.2,"productCategory1":"Mobilier ext\u00e9rieur professionnel","productCategory2":"Tables basses ext\u00e9rieures professionnelles","productImpressionListPosition":4}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+              
+              
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Table basse longue Kub H.30 cm","productId":"1039","productUnitPrice":655.2,"productBrand":false,"productVariant":20041,"productColor":"Coloris : Noir","productOriginalPrice":655.2,"productCategory1":"Mobilier ext\u00e9rieur professionnel","productCategory2":"Tables basses ext\u00e9rieures professionnelles","productImpressionListPosition":4}}}'
                     class="product-miniature js-product-miniature"
@@ -4307,13 +3856,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Pack table de r\u00e9union ovale et 8 chaises Porto","productId":"833","productUnitPrice":572.4,"productBrand":false,"productVariant":0,"productColor":"","productOriginalPrice":656.4,"productCategory1":"Bureaux et Tables","productCategory2":"Packs Tables","productImpressionListPosition":5}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+       
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Pack table de r\u00e9union ovale et 8 chaises Porto","productId":"833","productUnitPrice":572.4,"productBrand":false,"productVariant":0,"productColor":"","productOriginalPrice":656.4,"productCategory1":"Bureaux et Tables","productCategory2":"Packs Tables","productImpressionListPosition":5}}}'
                     class="product-miniature js-product-miniature"
@@ -4391,13 +3934,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"bench de 6 bureaux pour open space - Gamme Actea","productId":"715","productUnitPrice":1318.8,"productBrand":false,"productVariant":14574,"productColor":"Coloris Plateau : Ch\u00eane clair","productOriginalPrice":1318.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux open space","productCategory4":"Bureau Open Space 6 personnes","productImpressionListPosition":6}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+         
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"bench de 6 bureaux pour open space - Gamme Actea","productId":"715","productUnitPrice":1318.8,"productBrand":false,"productVariant":14574,"productColor":"Coloris Plateau : Ch\u00eane clair","productOriginalPrice":1318.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux open space","productCategory4":"Bureau Open Space 6 personnes","productImpressionListPosition":6}}}'
                     class="product-miniature js-product-miniature"
@@ -4496,13 +4033,8 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Table de r\u00e9union rectangulaire 8 personnes Pure L160xP164","productId":"976","productUnitPrice":514.8,"productBrand":false,"productVariant":19167,"productColor":"Coloris Plateau : Blanc","productOriginalPrice":514.8,"productCategory1":"Bureaux et Tables","productCategory2":"Table de r\u00e9union","productCategory3":"Table de r\u00e9union rectangulaire ","productImpressionListPosition":7}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+               
+               
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Table de r\u00e9union rectangulaire 8 personnes Pure L160xP164","productId":"976","productUnitPrice":514.8,"productBrand":false,"productVariant":19167,"productColor":"Coloris Plateau : Blanc","productOriginalPrice":514.8,"productCategory1":"Bureaux et Tables","productCategory2":"Table de r\u00e9union","productCategory3":"Table de r\u00e9union rectangulaire ","productImpressionListPosition":7}}}'
                     class="product-miniature js-product-miniature"
@@ -4601,13 +4133,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Bureau Droit Panneaux Gris Anthracite","productId":"948","productUnitPrice":166.8,"productBrand":false,"productVariant":18880,"productColor":"Coloris Plateau : Gris","productOriginalPrice":226.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux Droits Individuel","productImpressionListPosition":8}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+   
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Bureau Droit Panneaux Gris Anthracite","productId":"948","productUnitPrice":166.8,"productBrand":false,"productVariant":18880,"productColor":"Coloris Plateau : Gris","productOriginalPrice":226.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux Droits Individuel","productImpressionListPosition":8}}}'
                     class="product-miniature js-product-miniature"
@@ -4693,13 +4219,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Bureau de direction Design Gamme PLANA","productId":"946","productUnitPrice":2154,"productBrand":false,"productVariant":18795,"productColor":"Coloris Plateau : Noyer","productOriginalPrice":2154,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureau de Direction","productImpressionListPosition":9}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+          
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Bureau de direction Design Gamme PLANA","productId":"946","productUnitPrice":2154,"productBrand":false,"productVariant":18795,"productColor":"Coloris Plateau : Noyer","productOriginalPrice":2154,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureau de Direction","productImpressionListPosition":9}}}'
                     class="product-miniature js-product-miniature"
@@ -4781,13 +4301,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Table modulable pliante","productId":"240","productUnitPrice":190.8,"productBrand":false,"productVariant":12300,"productColor":"Coloris Plateau : H\u00eatre","productOriginalPrice":190.8,"productCategory1":"Bureaux et Tables","productCategory2":"Table de r\u00e9union","productCategory3":"Tables de r\u00e9union modulable","productImpressionListPosition":10}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+  
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Table modulable pliante","productId":"240","productUnitPrice":190.8,"productBrand":false,"productVariant":12300,"productColor":"Coloris Plateau : H\u00eatre","productOriginalPrice":190.8,"productCategory1":"Bureaux et Tables","productCategory2":"Table de r\u00e9union","productCategory3":"Tables de r\u00e9union modulable","productImpressionListPosition":10}}}'
                     class="product-miniature js-product-miniature"
@@ -4885,13 +4399,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Bench de 4 bureaux pour open space - Gamme Pure","productId":"443","productUnitPrice":838.8,"productBrand":false,"productVariant":17776,"productColor":"Coloris Plateau : H\u00eatre","productOriginalPrice":838.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux open space","productCategory4":"Bureau Open space 4 personnes","productImpressionListPosition":11}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+   
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Bench de 4 bureaux pour open space - Gamme Pure","productId":"443","productUnitPrice":838.8,"productBrand":false,"productVariant":17776,"productColor":"Coloris Plateau : H\u00eatre","productOriginalPrice":838.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux open space","productCategory4":"Bureau Open space 4 personnes","productImpressionListPosition":11}}}'
                     class="product-miniature js-product-miniature"
@@ -5020,13 +4528,7 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Bureau d\u0027angle Electra + retour + caisson M\u00e9tal HB 80 cm","productId":"701","productUnitPrice":754.8,"productBrand":false,"productVariant":12128,"productColor":"Coloris Plateau : H\u00eatre","productOriginalPrice":801.6,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux d\u0027Angle Professionnel","productImpressionListPosition":12}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+ 
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Bureau d\u0027angle Electra + retour + caisson M\u00e9tal HB 80 cm","productId":"701","productUnitPrice":754.8,"productBrand":false,"productVariant":12128,"productColor":"Coloris Plateau : H\u00eatre","productOriginalPrice":801.6,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux d\u0027Angle Professionnel","productImpressionListPosition":12}}}'
                     class="product-miniature js-product-miniature"
@@ -5160,13 +4662,8 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Gu\u00e9ridon Arko","productId":"645","productUnitPrice":142.8,"productBrand":false,"productVariant":12315,"productColor":"Coloris Plateau : Blanc","productOriginalPrice":142.8,"productCategory1":"Bureaux et Tables","productCategory2":"Tables hautes mange debout","productImpressionListPosition":13}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+         
+         
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Gu\u00e9ridon Arko","productId":"645","productUnitPrice":142.8,"productBrand":false,"productVariant":12315,"productColor":"Coloris Plateau : Blanc","productOriginalPrice":142.8,"productCategory1":"Bureaux et Tables","productCategory2":"Tables hautes mange debout","productImpressionListPosition":13}}}'
                     class="product-miniature js-product-miniature"
@@ -5247,13 +4744,8 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Bureau design \u00e9cologique Dizy","productId":"820","productUnitPrice":778.8,"productBrand":false,"productVariant":16505,"productColor":"Coloris Plateau : Ch\u00eane clair","productOriginalPrice":778.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productImpressionListPosition":14}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+        
+        
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Bureau design \u00e9cologique Dizy","productId":"820","productUnitPrice":778.8,"productBrand":false,"productVariant":16505,"productColor":"Coloris Plateau : Ch\u00eane clair","productOriginalPrice":778.8,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productImpressionListPosition":14}}}'
                     class="product-miniature js-product-miniature"
@@ -5336,13 +4828,8 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Bureau \u00e9lectrique color\u00e9","productId":"1028","productUnitPrice":918,"productBrand":false,"productVariant":20025,"productColor":"Coloris : Bleu nuit","productOriginalPrice":918,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux R\u00e9glable en Hauteur - Assis Debout","productImpressionListPosition":15}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+         
+         
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Bureau \u00e9lectrique color\u00e9","productId":"1028","productUnitPrice":918,"productBrand":false,"productVariant":20025,"productColor":"Coloris : Bleu nuit","productOriginalPrice":918,"productCategory1":"Bureaux et Tables","productCategory2":"Bureaux professionnels","productCategory3":"Bureaux R\u00e9glable en Hauteur - Assis Debout","productImpressionListPosition":15}}}'
                     class="product-miniature js-product-miniature"
@@ -5448,13 +4935,8 @@
                   class="product-slider__slide swiper-slide"
                   style="width: 383.5px"
                 >
-                  <script>
-                    var productDataLayer = JSON.parse(
-                      '{"productName":"Table de reunion carr\u00e9e Archi 4 \u00e0\u00a0 6 personnes L130 x P 130 cm","productId":"590","productUnitPrice":478.8,"productBrand":false,"productVariant":12224,"productColor":"Coloris Plateau : Blanc","productOriginalPrice":478.8,"productCategory1":"Bureaux et Tables","productCategory2":"Table de r\u00e9union","productImpressionListPosition":16}'
-                    );
-                    if ("productImpressionListPosition" in productDataLayer)
-                      delete productDataLayer["productImpressionListPosition"];
-                  </script>
+         
+         
                   <article
                     data-datalayer='{"datalayer":{"listName":"Les produits de la m\u00eame cat\u00e9gorie","product":{"productName":"Table de reunion carr\u00e9e Archi 4 \u00e0\u00a0 6 personnes L130 x P 130 cm","productId":"590","productUnitPrice":478.8,"productBrand":false,"productVariant":12224,"productColor":"Coloris Plateau : Blanc","productOriginalPrice":478.8,"productCategory1":"Bureaux et Tables","productCategory2":"Table de r\u00e9union","productImpressionListPosition":16}}}'
                     class="product-miniature js-product-miniature"
@@ -5667,7 +5149,7 @@
         <div class="container">
           <div class="row"></div>
           <div class="row">
-            <script src="./static/widget19_FB3.min.js.téléchargement"></script>
+    
           
           
             <div class="col-12 col-sm-6 col-md-auto">
@@ -5952,7 +5434,7 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
       (function () {
@@ -5964,11 +5446,8 @@
         s1.setAttribute("crossorigin", "*");
         s0.parentNode.insertBefore(s1, s0);
       })();
-    </script>
-    <script
-      type="text/javascript"
-      src="./static/bottom-3e4beb1297.js.téléchargement"
-    ></script>
+    </script> -->
+ 
  
  
     <div>
@@ -6167,7 +5646,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>  </div>
     <style>
      
       body.AV_fancybox-active {
@@ -6934,12 +6413,8 @@
         }
       }
     </style>
-    <script
-      async=""
-      charset="UTF-8"
-      src="./static/fr.js.téléchargement"
-    ></script>
-  </div>
+ 
+
   </body>
 
   <script src="../scripts/components/gostro/viewer-component.js"></script> 
@@ -6949,5 +6424,18 @@
   <script src="../scripts/base-data.js"></script>
   <script src="./scripts/data.js"></script>
   <script src="./scripts/use-vue.js"></script>
+  <script type="text/javascript">  
+    var script  = document.createElement('script');
+    script.src="./scripts/init.js";
+    script.async = false; 
+    script.addEventListener('load', () => { 
+      var url = integration.url;
+      var id = "threed-iframe";
+      window.loadConfigurateur(id, url);
+    });
+
+    var head = document.head || document.getElementsByTagName('head')[0];
+    head.insertBefore(script, head.firstChild); 
+  </script>  
 </body>
 </html>

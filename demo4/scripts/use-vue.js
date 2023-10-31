@@ -11,26 +11,13 @@ const App = {
     },
   },
 };
-const Home = { template: "<div>Home</div>" };
+const Home = { template: "<span>Home</span>" }; 
 
 const routes = [
   {
     path: "/demo4",
-    name: "user",
     component: Home,
   },
-  // {
-  //   name: "select1",
-  //   path: "/select1",
-  //   component: Home,
-  // },
-  // {
-  //   name: "select2",
-  //   path: "/select2",
-  //   component: Home,
-  // },
-  { path: "/", component: Home },
-  // { path: "/about", component: Home },
 ];
 
 const router = VueRouter.createRouter({
