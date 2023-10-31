@@ -50,7 +50,7 @@ const buttonComponent = {
       const query = Object.assign({}, this.$route.query);
       query.t = new Date().getTime().toString();
       query[this.parent] = this.href;
-      this.$router.push({ query }); //by route path
+      this.$router.push({ query });
     },
   },
 };
