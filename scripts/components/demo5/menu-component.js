@@ -7,12 +7,13 @@ const menuComponent = {
  
    
    
-    <threed-button-component
+    <threed-button-component class="m-10"
       v-for="groupe in groupement.groupes" :key="groupe.href"  
       :parent="groupement.libelle"
       :href="groupe.href"
       :alt="groupe.alt"
       :src="groupe.src" 
+      @on-click="onClick(groupement, groupe)"
     /> 
 
        
@@ -25,6 +26,7 @@ const menuComponent = {
 
   methods: {
     onClick(groupement, groupe) {
+      debugger;
       groupement.groupes.forEach((g) => {
         g.isSelected = false;
       });

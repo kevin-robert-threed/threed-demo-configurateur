@@ -1,10 +1,10 @@
 const buttonComponent = {
   template: `
   <a @click.native="onClick" > 
-    <div      class="custom-control-label" 
+    <div      
       :style="backgroundStyle"    
     > </div>
-  </div></a>
+  </div>{{isSelected}}</a>
   
   
  

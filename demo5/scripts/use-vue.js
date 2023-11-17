@@ -5,8 +5,13 @@ const App = {
     };
   },
   methods: {
+    onClick(item) {
+      const frame = document.getElementById("threed-iframe");
+      // const frame = this.$refs.viewer.frame
+
+      configureIFrame(item, frame);
+    },
     getBack() {
-      
       getBack();
     },
   },

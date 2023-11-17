@@ -13,7 +13,10 @@
     <div id="app">
       <div class="wrapper">
         <div class="w30">
-          <threed-menu-component :groupements="integration.groupements" />
+          <threed-menu-component
+            :groupements="integration.groupements"
+            @on-click="onClick"
+          />
 
           <canvas id="textCanvas" height="20"></canvas>
           <img id="image" />
@@ -51,22 +54,6 @@
 
       var head = document.head || document.getElementsByTagName("head")[0];
       head.insertBefore(script, head.firstChild);
-    </script>
-    <script type="text/javascript">
-      debugger;
-      var tCtx = document.getElementById("textCanvas").getContext("2d"),
-        imageElem = document.getElementById("image");
-
-      document.getElementById("text").addEventListener(
-        "keyup",
-        function () {
-          tCtx.canvas.width = tCtx.measureText(this.value).width;
-          tCtx.fillText(this.value, 0, 10);
-          imageElem.src = tCtx.canvas.toDataURL();
-          console.log(imageElem.src);
-        },
-        false
-      );
     </script>
   </body>
 </html>
