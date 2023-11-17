@@ -1,14 +1,14 @@
 (function (global) {
   function l() {
     
-    
+    // global.onload = observeUrlChange;
 
     // Fonction pour détecter les changements de window.location.href
     function detectUrlChange(callback) {
       const observer = new MutationObserver((mutationsList) => {
         
         mutationsList.forEach((mutation) => {
-         
+           
           if (
             mutation.type === "childList" &&
             mutation.target === document.head
@@ -60,7 +60,7 @@
     document.getElementById(id).src = url;
 
     // navigation.addEventListener("navigate", (event) => {
-     
+    //   
     //   console.log("page changed : " + window.location.search);
     //   configureIFrame2(window.location.search);
 
