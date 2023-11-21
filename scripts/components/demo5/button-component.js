@@ -1,10 +1,9 @@
 const buttonComponent = {
   template: `
   <a @click.native="onClick" > 
-    <div      
-      :style="backgroundStyle"    
-    > </div>
-  </div>{{isSelected}}</a>
+    <div :style="backgroundStyle"  :class="isSelected ? 'selected' : ''"     > </div>
+  </div> 
+  </a>
   
   
  
@@ -17,8 +16,9 @@ const buttonComponent = {
       return {
         "background-image": `url(${this.src})`,
 
-        height: "50px",
-        width: "50px",
+        "background-position": "center",
+        height: "100px",
+        width: "100px",
       };
     },
   },

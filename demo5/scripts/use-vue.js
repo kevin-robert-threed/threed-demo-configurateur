@@ -8,9 +8,10 @@ const App = {
     onClick(item) {
       const frame = document.getElementById("threed-iframe");
       // const frame = this.$refs.viewer.frame
-
+      debugger;
       configureIFrame(item, frame);
     },
+
     getBack() {
       getBack();
     },

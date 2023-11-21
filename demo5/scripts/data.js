@@ -3,7 +3,7 @@ const url = baseUrl + "Configurateur/1a462ae4-a147-449f-b5a4-231763614a1e";
 const integration = {
   nom: "Tee-shirt",
   baseUrl: url,
-  url: url + "?txt.Couleur=bleu",
+  url: url + "?txt.Couleur=Threed-Gris",
   produit: "MAILLOT DE FOOTBALL VIRALTO JR AXTON    ",
   groupements: [
     {
@@ -12,7 +12,6 @@ const integration = {
         {
           libelle: "bleu",
           options: [{ "txt.Couleur": "bleu" }],
-          isSelected: true,
           src: "https://portail.threed.fr/images/Textures/txt_Couleur_Threed-Bleu_40.png",
         },
         {
@@ -34,6 +33,7 @@ const integration = {
           libelle: "Threed-Gris",
           options: [{ "txt.Couleur": "Threed-Gris" }],
           src: "https://portail.threed.fr/images/Textures/txt_Couleur_Threed-Gris_40.png",
+          isSelected: true,
         },
       ],
     },
