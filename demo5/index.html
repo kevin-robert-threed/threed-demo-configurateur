@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Hello</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="wrapper">
+        <div class="w30">
+          <threed-menu-component
+            :groupements="integration.groupements"
+            @on-click="onClick"
+          />
+
+          <canvas id="textCanvas" height="20"></canvas>
+          <img id="image" />
+          <br />
+          <textarea id="text"></textarea>
+        </div>
+        <div class="w70">
+          <iframe
+            id="threed-iframe"
+            width="100%"
+            height="500"
+            frameborder="0"
+            class="viewer-iframe"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/components/demo5/menu-component.js"></script>
+    <script src="../scripts/components/demo5/button-component.js"></script>
+    <script src="../scripts/helpers.js"></script>
+    <script src="../scripts/base-data.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/use-vue.js"></script>
+    <script type="text/javascript">
+      var script = document.createElement("script");
+      script.src = "./scripts/init.js";
+      script.async = false;
+      script.addEventListener("load", () => {
+        var url = integration.url;
+        var id = "threed-iframe";
+        window.loadConfigurateur(id, url);
+      });
+
+      var head = document.head || document.getElementsByTagName("head")[0];
+      head.insertBefore(script, head.firstChild);
+    </script>
+  </body>
+</html>

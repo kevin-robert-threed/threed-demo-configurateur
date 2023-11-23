@@ -6,7 +6,7 @@ const App = {
   },
   methods: {
     getBack() {
-      debugger;
+     
       getBack();
     },
   },
