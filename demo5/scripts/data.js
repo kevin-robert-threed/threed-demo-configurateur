@@ -1,4 +1,4 @@
-const url = baseUrl + "Configurateur/1a462ae4-a147-449f-b5a4-231763614a1e";
+const url = baseUrl + "Configurateur/1c3e62d0-ac8f-4c2a-a2a0-22d7fca2b6a1";
 
 const integration = {
   nom: "Tee-shirt",
