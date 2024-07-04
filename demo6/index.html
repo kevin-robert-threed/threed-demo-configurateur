@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <title>Démo 6</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="wrapper">
+        <div class="w30">
+          <a @click="getBack">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAclBMVEX///8pMEDx8fKIipKys7gACyYQGzEQHDEaIzYeJjghKTomLT4tNEQWIDTo6eri4+VOU19GTFnW19oAACPQ0dTc3d8+RFL4+Pi5u7/AwcVvc3xTWGR9gYkDFCyoqq8ABiU1PEuUlp1jaHMAABmeoadaX2nLFyUMAAAFjUlEQVR4nO2dC3OiQBCEWUVkWUBAHgKCyun//4uHOc3loUjnzG2zd22qkjIpM1/N7vQgMFrWN2tWHrrc9/PuUM6++399r4pk6/5opBJCyeaHu00K3RF9XdlcOj3IVcqR80x3TF9UsYmaNygvOE20mWRyitYPxCcFfjtFmqOQn1lE/2SrOzJcR+XdYhHCUxvdsaE6undYhHD9UHd0mAZYhHAq3eFBOkp1n0WIRaI7QECHYJBFuJ3uCMfr7t6/Sqmp7JqifcTS09i6oxynor3tL+8kt7rDHKXe9x+zCG8am2ZMXnqYegqHAw/3/gUmmgBMO+SV72D4y9nRG8cyhcy0Y1mEPOmO9ZEG+7EPmWEvzSO88jcM+TENwqL8le5wh1TYo/zlIvJGc5Tvv6opdcc7JIzFoU5MqxAWz2PeMfb4mnzWmrn/bwXEsjsQv3EGsqznxJ3M+B7mLOUw58WG8qJc5rxAXimU95/l78iGvFIsDWLZMbNgvs/NYmMs3P7iY77PzGKDLFtiFqyHUQ53XiB/cZnzsgG9kpnF9l2ERZqzxoTDnRfMK6lZoP3CzYLtfbFmZrH3oFcSn7rYGMSC9TCqYV5joFcG1CxYDyOZ19gG833ufmyPsAju/QLlRSyoWTCvXHDvF7CHYWbBvJI7L0axQGusYWYpMX8JKnNYqH0fYxEuc15Q32dmAfNiEgt1TS6xmkzNssnNYSkxFu79Avo+Ncs/7PvULPsb977dF3deMBaD9otoOmYWtB8jvrCvzLEehpolBv2FmQX1fZNYmPc+Vseo/SXF6hj1MXKKeSV3D5NDLF6dFTOtKu5fiJvemkUwlJjuMNerw6HdJDfPNoB5OdMsnfPj9at/XL6/ecq599Tlx6+/xvkPA1Vv28+LvYyhvc8iJR3VfRxkAfo+k5TrV5khLOKMU6dv9j7WW/LJzV9pkhjd+3QK8svwh7BqdMfy57p2ie1OdyTP0OLl1s8V1iizSu7PByPHhe44nqPF0bIKMxLTpyYvrGStO4pnaZ1YrSGrTIhda1WT95irgq0VQxcsMMuLLV93DM+Tb+mO4Jmy9sMzoiYktbdqc/ZMbW2XuoN4lpZzyzbHNG1rZUTPfNZuZRX1xI8yr3LrwjJmnb0MgJhFRqTG/TX+qfw4IXaKUpfxL8XBmTzN7wkQYeVOnEa9ObuSVcNDPNml5Nv3NLNJ50bK7bszq1k32ZLmNfHHEwGr0yR7NC/Y+YfPk2zDGn1fM9gt7ujuLwA9fo3detf4lZ3dOn82yzGaYLux9aosk/DebTphBNGoPfUk+VnkIDTSpx67HJ6gmibz9PFr6tOqg9wziKlpMpCmJqfBrp5hp4Her11y06xOUE0LImqaEKvQ5FUgzCEa16d2z1WM0XD3AmEE9dByb1Iv4HL3AtkJc0/umpaAvcCJmwZbaUt2GpN6gayGKvSy5q5pmN8EETcN2Avk1O6J9gLsNFAv4MbcNNiZtSCm3jd9LwDRcFfoBKOhd09opTnsNFAvQE6TYcc35L3AKsdoIu4KjdEE3H6Toe5JfM9jT4Plxo24abBLOch76KQG3ZOaJsV6AafjpsG6TnoasBegpkmwCu2cuP0Gu59zSV6h0c6GmibBcuPW/2n+mhKsFyA/IkixXoC8poE0y46bBltp7L1AhPUC3LlJML9xTtw1DavQDnmFBjsbbpoUdE/ylQZOqCOnweaILMndMwKPpI2iqchpzJm619Ng80ScivjzD+Ca1sx1BzwobJaYcqg/UBt0Tzcm/lBdC81Nw/wx1BZII2Pd4T5QCsyuUh71SU8Lo/EOuqN9JGCumFfpDvahxk+vkyfuenbW6LmCXkTdBfzS2ImPXkQ8gvNVIyv0JDIzlsarJwEzbn6t7HSHOVLpiBlj3vc0zj8Bp/SKxsdz7CYAAAAASUVORK5CYII="
+              alt="Go Back"
+              class="img-fluid"
+              width="200"
+              height="53"
+            />
+          </a>
+        </div>
+        <div class="w70">
+          <div
+            class="elfsight-app-e505197f-c9f0-423f-8904-07cfde6bfbb0"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/components/demo5/menu-component.js"></script>
+    <script src="../scripts/components/demo5/button-component.js"></script>
+    <script src="../scripts/helpers.js"></script>
+    <script src="../scripts/base-data.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/use-vue.js"></script>
+    <script type="text/javascript">
+      var script = document.createElement("script");
+      script.src = "./scripts/init.js";
+      script.async = false;
+      script.addEventListener("load", () => {
+        var url = integration.url;
+        var id = "threed-iframe";
+        window.loadConfigurateur(id, url);
+      });
+
+      var head = document.head || document.getElementsByTagName("head")[0];
+      head.insertBefore(script, head.firstChild);
+    </script>
+  </body>
+</html>

@@ -24,4 +24,9 @@ const cards = [
     titre: "Démo 5",
     description: "Gravure",
   },
+  {
+    href: "./demo6/",
+    titre: "Démo 6",
+    description: "Elfsight",
+  },
 ];
