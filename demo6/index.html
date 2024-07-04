@@ -63,7 +63,6 @@
       // Configure sentryOnLoad before adding the Loader Script
       window.sentryOnLoad = function () {
         Sentry.init({
-          environment: NODE_ENV,
           dsn: "https://526992e9f00848af9c70a4fe1e581ad3@o4504633676398592.ingest.sentry.io/4504633690226688",
 
           integrations: [
@@ -87,7 +86,7 @@
         });
       };
     </script>
- 
+
     <script
       src="https://js.sentry-cdn.com/526992e9f00848af9c70a4fe1e581ad3.min.js"
       crossorigin="anonymous"
